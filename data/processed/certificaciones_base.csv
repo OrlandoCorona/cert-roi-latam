@@ -1,0 +1,29 @@
+codigo,nombre_oficial,proveedor,categoria,nivel,costo_examen_usd,horas_estudio,vigencia_anios,requisitos_previos,url_oficial
+AWS_CLF,AWS Certified Cloud Practitioner (CLF-C02),AWS,Cloud,Entry,100,30,3,Ninguno,https://aws.amazon.com/certification/certified-cloud-practitioner/
+AWS_SAA,AWS Certified Solutions Architect – Associate (SAA-C03),AWS,Cloud,Associate,150,100,3,Ninguno formal,https://aws.amazon.com/certification/certified-solutions-architect-associate/
+AWS_DVA,AWS Certified Developer – Associate (DVA-C02),AWS,Cloud,Associate,150,100,3,Ninguno formal,https://aws.amazon.com/certification/certified-developer-associate/
+AZ_900,Microsoft Certified: Azure Fundamentals (AZ-900),Microsoft,Cloud,Entry,99,30,,Ninguno,https://learn.microsoft.com/credentials/certifications/azure-fundamentals/
+AZ_104,Microsoft Certified: Azure Administrator Associate (AZ-104),Microsoft,Cloud,Associate,165,100,1,6 meses de experiencia en Azure recomendada,https://learn.microsoft.com/credentials/certifications/azure-administrator/
+AZ_DP203,Microsoft Certified: Azure Data Engineer Associate (DP-203),Microsoft,Cloud,Associate,165,100,1,Experiencia con SQL y Python o Scala,https://learn.microsoft.com/credentials/certifications/azure-data-engineer/
+GCP_ACE,Google Cloud Associate Cloud Engineer,Google,Cloud,Associate,125,80,3,6 meses de experiencia en GCP recomendada,https://cloud.google.com/certification/cloud-engineer
+GCP_PCA,Google Cloud Professional Cloud Architect,Google,Cloud,Professional,200,120,2,3 años de experiencia en industria y 1 en GCP,https://cloud.google.com/certification/cloud-architect
+GCP_PDE,Google Cloud Professional Data Engineer,Google,Cloud,Professional,200,120,2,3 años de experiencia en industria y 1 en GCP,https://cloud.google.com/certification/data-engineer
+COURSERA_GDA,Google Data Analytics Professional Certificate,Google,Datos y BI,Entry,234,180,,Ninguno,https://www.coursera.org/professional-certificates/google-data-analytics
+COURSERA_IBM_DA,IBM Data Analyst Professional Certificate,IBM,Datos y BI,Entry,234,120,,Ninguno,https://www.coursera.org/professional-certificates/ibm-data-analyst
+MS_PL300,Microsoft Certified: Power BI Data Analyst Associate (PL-300),Microsoft,Datos y BI,Associate,165,80,1,Experiencia con Power BI y análisis de datos,https://learn.microsoft.com/credentials/certifications/data-analyst-associate/
+TAB_SPEC,Tableau Desktop Specialist,Tableau,Datos y BI,Entry,100,50,,Ninguno,https://www.tableau.com/learn/certification/desktop-specialist
+TAB_CDA,Tableau Certified Data Analyst,Tableau,Datos y BI,Associate,250,100,2,Mínimo 6 meses usando Tableau,https://www.tableau.com/learn/certification/certified-data-analyst
+DL_MLS,Machine Learning Specialization (DeepLearning.AI),DeepLearning.AI,Datos y BI,Intermediate,147,94,,Álgebra lineal básica y Python básico,https://www.coursera.org/specializations/machine-learning-introduction
+DB_LHF,Databricks Lakehouse Fundamentals,Databricks,Datos y BI,Entry,0,15,,Ninguno,https://www.databricks.com/learn/certification/lakehouse-fundamentals
+COMPTIA_APLUS,CompTIA A+ (Core 1 + Core 2),CompTIA,Infraestructura,Entry,506,100,3,Ninguno,https://www.comptia.org/certifications/a
+COMPTIA_NET,CompTIA Network+,CompTIA,Infraestructura,Entry,369,100,3,A+ recomendada y 9-12 meses de experiencia,https://www.comptia.org/certifications/network
+COMPTIA_SEC,CompTIA Security+,CompTIA,Infraestructura,Entry,404,100,3,Network+ recomendada y 2 años de experiencia en TI,https://www.comptia.org/certifications/security
+CCNA,Cisco Certified Network Associate (200-301),Cisco,Infraestructura,Associate,300,120,3,Ninguno formal; 1 año de experiencia recomendada,https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html
+LPIC1,LPIC-1 Linux Administrator,Linux Professional Institute,Infraestructura,Entry,400,80,5,Ninguno,https://www.lpi.org/our-certifications/lpic-1-overview
+PMP,Project Management Professional,PMI,Gestión,Professional,575,180,3,Grado universitario y 36 meses de experiencia o preparatoria y 60 meses,https://www.pmi.org/certifications/project-management-pmp
+PSM1,Professional Scrum Master I (PSM I),Scrum.org,Gestión,Entry,200,30,,Ninguno,https://www.scrum.org/professional-scrum-master-i-certification
+CSM,Certified ScrumMaster,Scrum Alliance,Gestión,Entry,995,20,2,Curso oficial de 2 días obligatorio,https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster
+COURSERA_GPM,Google Project Management Professional Certificate,Google,Gestión,Entry,294,180,,Ninguno,https://www.coursera.org/professional-certificates/google-project-management
+CEH,Certified Ethical Hacker,EC-Council,Ciber,Professional,1199,180,3,2 años de experiencia en seguridad o curso oficial,https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/
+CISSP,Certified Information Systems Security Professional,ISC2,Ciber,Expert,749,250,3,5 años de experiencia en 2 o más dominios CISSP,https://www.isc2.org/certifications/cissp
+OSCP,Offensive Security Certified Professional,Offensive Security,Ciber,Expert,1749,300,3,Curso PEN-200 obligatorio,https://www.offsec.com/courses/pen-200/
