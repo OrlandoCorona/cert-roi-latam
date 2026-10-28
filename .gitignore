@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+data/raw/
+*.pbix.bak
+.env
+*.log
+__pycache__/
+.vscode/
