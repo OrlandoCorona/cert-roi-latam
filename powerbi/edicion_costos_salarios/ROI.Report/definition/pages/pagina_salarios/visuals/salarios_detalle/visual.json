@@ -1,0 +1,149 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "salarios_detalle",
+  "position": {
+    "x": 40,
+    "y": 730,
+    "width": 1840,
+    "height": 265,
+    "z": 1000,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_pbi_salarios_v2"
+                    }
+                  },
+                  "Property": "vacante_id"
+                }
+              },
+              "queryRef": "vw_pbi_salarios_v2.vacante_id",
+              "nativeQueryRef": "Vacante ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_pbi_salarios_v2"
+                    }
+                  },
+                  "Property": "titulo"
+                }
+              },
+              "queryRef": "vw_pbi_salarios_v2.titulo",
+              "nativeQueryRef": "Vacante"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_pbi_salarios_v2"
+                    }
+                  },
+                  "Property": "minimo_usd"
+                }
+              },
+              "queryRef": "vw_pbi_salarios_v2.minimo_usd",
+              "nativeQueryRef": "Mínimo publicado USD"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_pbi_salarios_v2"
+                    }
+                  },
+                  "Property": "maximo_usd"
+                }
+              },
+              "queryRef": "vw_pbi_salarios_v2.maximo_usd",
+              "nativeQueryRef": "Máximo publicado USD"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_pbi_salarios_v2"
+                    }
+                  },
+                  "Property": "periodo"
+                }
+              },
+              "queryRef": "vw_pbi_salarios_v2.periodo",
+              "nativeQueryRef": "Periodo de pago"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_pbi_salarios_v2"
+                    }
+                  },
+                  "Property": "calidad_salario"
+                }
+              },
+              "queryRef": "vw_pbi_salarios_v2.calidad_salario",
+              "nativeQueryRef": "Estado del dato"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Detalle de vacantes e importes originales'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

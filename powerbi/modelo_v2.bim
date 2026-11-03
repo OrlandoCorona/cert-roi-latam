@@ -1,0 +1,2573 @@
+﻿{
+  "name": "b4ca83e8-e2f7-4731-b61b-8ad60ee81645",
+  "compatibilityLevel": 1606,
+  "createdTimestamp": "2026-10-29T16:35:30.4-06:00",
+  "lastUpdate": "2026-11-01T01:14:58.526667-06:00",
+  "lastSchemaUpdate": "2026-10-29T16:35:30.4-06:00",
+  "lastProcessed": "2026-11-01T01:14:58.33-06:00",
+  "model": {
+    "culture": "es-MX",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "es-MX",
+    "valueFilterBehavior": "independent",
+    "modifiedTime": "2026-10-29T22:35:32.076667",
+    "structureModifiedTime": "2026-11-01T07:14:51.746667",
+    "tables": [
+      {
+        "name": "vw_pbi_cert_roi",
+        "lineageTag": "ca0f4028-4b56-412c-9aa5-3122bd7d5225",
+        "modifiedTime": "2026-10-29T22:42:13.666667",
+        "structureModifiedTime": "2026-10-30T05:18:51.153333",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2026-10-29T22:42:13.693333",
+            "structureModifiedTime": "2026-10-29T22:42:13.666667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:54.02"
+            }
+          },
+          {
+            "name": "cert_id",
+            "dataType": "int64",
+            "sourceColumn": "cert_id",
+            "formatString": "0",
+            "lineageTag": "41469dd8-211b-42fa-a339-032bb8610846",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-30T01:18:46.133333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.013333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "codigo",
+            "dataType": "string",
+            "sourceColumn": "codigo",
+            "lineageTag": "7edfffe0-0cb5-4529-a656-c7407f1ecefb",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.016667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "nombre_oficial",
+            "dataType": "string",
+            "sourceColumn": "nombre_oficial",
+            "lineageTag": "d56bf125-31b0-45d4-ba91-d6d143904f25",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.023333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "proveedor",
+            "dataType": "string",
+            "sourceColumn": "proveedor",
+            "lineageTag": "cc2f2378-5f62-4e9f-b92b-f2237b0dbb2f",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.02"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "categoria",
+            "dataType": "string",
+            "sourceColumn": "categoria",
+            "lineageTag": "9a84f4da-30bb-4ebc-8bad-fc12d471b141",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.016667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "nivel",
+            "dataType": "string",
+            "sourceColumn": "nivel",
+            "lineageTag": "75567c6e-7aa5-49cd-8567-451f17f3b5ec",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:54.013333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "costo_examen_usd",
+            "dataType": "double",
+            "sourceColumn": "costo_examen_usd",
+            "lineageTag": "768f404a-41bf-4f90-b3e7-10ae508d7dd5",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-30T01:18:46.133333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.013333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "costo_examen_mxn",
+            "dataType": "double",
+            "sourceColumn": "costo_examen_mxn",
+            "lineageTag": "769f2a48-2883-4fb0-9138-f6fd00803fbd",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-30T01:18:46.133333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.013333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "horas_estudio",
+            "dataType": "int64",
+            "sourceColumn": "horas_estudio",
+            "formatString": "0",
+            "lineageTag": "02a00ced-62e0-4fd7-9f03-fd0e07397e00",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-30T01:18:46.133333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.013333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "vigencia_anios",
+            "dataType": "int64",
+            "sourceColumn": "vigencia_anios",
+            "formatString": "0",
+            "lineageTag": "4a602b12-a92c-442f-b96b-c01605b2db69",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-30T01:18:46.133333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.013333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "inversion_total_mxn",
+            "dataType": "double",
+            "sourceColumn": "inversion_total_mxn",
+            "lineageTag": "e132c9f9-90d1-4227-a07b-6506276af035",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-30T01:18:46.133333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:54.036667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "vacantes_con_cert",
+            "dataType": "int64",
+            "sourceColumn": "vacantes_con_cert",
+            "formatString": "#,0",
+            "lineageTag": "c9fa3389-9f56-4129-ae31-a43f41d469c3",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-30T04:37:24.516667",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:54.016667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "porcentaje_mercado",
+            "dataType": "double",
+            "sourceColumn": "porcentaje_mercado",
+            "lineageTag": "12244403-b031-4839-b6db-d31d77487f62",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-30T01:18:46.133333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:54.016667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "salario_promedio_global_usd",
+            "dataType": "double",
+            "sourceColumn": "salario_promedio_global_usd",
+            "lineageTag": "ae155308-6c40-43fe-a16f-717686e36393",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-30T01:18:46.133333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.016667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "salario_promedio_global_mxn",
+            "dataType": "double",
+            "sourceColumn": "salario_promedio_global_mxn",
+            "lineageTag": "3fce6d50-4006-45ab-baf9-36e129297efa",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-30T01:18:46.133333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.016667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "salario_promedio_latam_mxn",
+            "dataType": "double",
+            "sourceColumn": "salario_promedio_latam_mxn",
+            "lineageTag": "bd121210-f68f-43d7-bbae-1882a31d8ab1",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-30T01:18:46.133333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.016667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "roi_3_anios_estimado",
+            "dataType": "double",
+            "sourceColumn": "roi_3_anios_estimado",
+            "lineageTag": "97389e26-66f0-4f86-91e1-72027824e175",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-30T01:18:46.133333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.02"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "dias_para_recuperar_inversion",
+            "dataType": "double",
+            "sourceColumn": "dias_para_recuperar_inversion",
+            "lineageTag": "62341b32-f2c7-4db7-ad93-ba454a354144",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-30T01:18:46.133333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.016667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "calidad_muestra",
+            "dataType": "string",
+            "sourceColumn": "calidad_muestra",
+            "lineageTag": "b88c72ca-b2f9-4186-a57e-c64582e5ee9d",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:54.026667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vw_pbi_cert_roi",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2026-11-01T07:13:12.346667",
+            "refreshedTime": "2026-11-01T07:14:54",
+            "source": {
+              "type": "m",
+              "expression": "let Source = Sql.Database(\"ORLANDOCORONA\", \"cert_roi_latam\", [CreateNavigationProperties=false]), Data = Source{[Schema=\"dbo\",Item=\"vw_pbi_cert_roi\"]}[Data] in Data"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Total Certs",
+            "expression": "COUNTROWS(vw_pbi_cert_roi)",
+            "formatString": "#,0",
+            "lineageTag": "d66bdb71-4564-4739-8eed-51f76e95b68d",
+            "dataType": "int64",
+            "modifiedTime": "2026-10-30T04:36:56.013333",
+            "structureModifiedTime": "2026-10-30T01:21:37.853333"
+          },
+          {
+            "name": "Vacantes Analizadas",
+            "expression": "SUM(vw_pbi_kpis[total_vacantes])",
+            "formatString": "#,0",
+            "lineageTag": "2f27ac38-b21a-4b16-bd93-4211f0d8f465",
+            "dataType": "int64",
+            "modifiedTime": "2026-10-30T04:43:03.423333",
+            "structureModifiedTime": "2026-10-30T01:22:31.186667"
+          },
+          {
+            "name": "Inversión Promedio MXN",
+            "expression": "AVERAGE(vw_pbi_roi_escenario_v2[inversion_total_mxn])",
+            "formatString": "#,0",
+            "lineageTag": "03a370d7-4260-4380-9a6d-25ab0ceb9b44",
+            "dataType": "decimal",
+            "modifiedTime": "2026-11-01T07:14:52.74",
+            "structureModifiedTime": "2026-10-30T01:22:53.9",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDecimal\":true}",
+                "modifiedTime": "2026-10-30T05:09:09.586667"
+              }
+            ]
+          },
+          {
+            "name": "Vacantes con Cert",
+            "expression": "SUM(vw_pbi_kpis[vacantes_con_cert])",
+            "formatString": "#,0",
+            "lineageTag": "77364bb8-6802-4d13-ae04-9fba2d5c6da2",
+            "dataType": "int64",
+            "modifiedTime": "2026-10-30T04:44:02.223333",
+            "structureModifiedTime": "2026-10-30T04:43:48.226667"
+          },
+          {
+            "name": "% Mercado con Cert",
+            "expression": "DIVIDE([Vacantes con Cert], [Vacantes Analizadas], 0)",
+            "formatString": "0.0%;-0.0%;0.0%",
+            "lineageTag": "5e042aac-cac4-4170-b0a2-2d7de025d202",
+            "dataType": "double",
+            "modifiedTime": "2026-10-30T05:04:43.25",
+            "structureModifiedTime": "2026-10-30T04:44:18.233333"
+          },
+          {
+            "name": "ROI Promedio",
+            "description": "Promedio del escenario de ROI incremental bajo los supuestos de la tabla v2. No retorno observado.",
+            "expression": "AVERAGE(vw_pbi_roi_escenario_v2[roi_fraccion])",
+            "formatString": "0.0%",
+            "lineageTag": "b8516b96-3cf8-426c-bd4b-2af06e6d79ad",
+            "dataType": "decimal",
+            "modifiedTime": "2026-11-01T07:14:52.74",
+            "structureModifiedTime": "2026-10-30T05:05:56.166667"
+          },
+          {
+            "name": "Mejor ROI",
+            "description": "Maximo del escenario; no evidencia de mayor retorno real de una certificacion.",
+            "expression": "MAX(vw_pbi_roi_escenario_v2[roi_fraccion])",
+            "formatString": "0.0%",
+            "lineageTag": "ab79b037-4d91-420f-a62b-9d10b75c9fdf",
+            "dataType": "decimal",
+            "modifiedTime": "2026-11-01T07:14:52.74",
+            "structureModifiedTime": "2026-10-30T05:07:40.443333"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table",
+            "modifiedTime": "2026-10-29T22:42:13.686667"
+          }
+        ]
+      },
+      {
+        "name": "vw_pbi_kpis",
+        "lineageTag": "a75f2cf7-93a9-484c-a6ce-7103df74d5b8",
+        "modifiedTime": "2026-10-29T22:42:13.666667",
+        "structureModifiedTime": "2026-10-29T22:42:13.666667",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2026-10-29T22:42:13.693333",
+            "structureModifiedTime": "2026-10-29T22:42:13.666667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:58.383333"
+            }
+          },
+          {
+            "name": "total_vacantes",
+            "dataType": "int64",
+            "sourceColumn": "total_vacantes",
+            "formatString": "0",
+            "lineageTag": "ea09328e-daec-4611-9ff1-f279f9d35544",
+            "summarizeBy": "sum",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:58.38"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "total_empresas",
+            "dataType": "int64",
+            "sourceColumn": "total_empresas",
+            "formatString": "0",
+            "lineageTag": "e275616d-2a4d-45a6-9ede-95801332b782",
+            "summarizeBy": "sum",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:58.38"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "total_certificaciones",
+            "dataType": "int64",
+            "sourceColumn": "total_certificaciones",
+            "formatString": "0",
+            "lineageTag": "92f18d5f-7086-48fc-a41e-ea4ade617d2f",
+            "summarizeBy": "sum",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:58.38"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "vacantes_con_cert",
+            "dataType": "int64",
+            "sourceColumn": "vacantes_con_cert",
+            "formatString": "0",
+            "lineageTag": "fb05130f-badd-4559-9a00-d72113866e29",
+            "summarizeBy": "sum",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:58.383333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "total_menciones",
+            "dataType": "int64",
+            "sourceColumn": "total_menciones",
+            "formatString": "0",
+            "lineageTag": "e5cfab3e-09e7-40eb-9750-2c6efe4102c1",
+            "summarizeBy": "sum",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:58.383333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "pct_vacantes_con_cert",
+            "dataType": "double",
+            "sourceColumn": "pct_vacantes_con_cert",
+            "lineageTag": "5e80f558-49ae-4ce1-8115-95dcbe6553cf",
+            "summarizeBy": "sum",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:58.383333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vw_pbi_kpis",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2026-11-01T07:13:12.346667",
+            "refreshedTime": "2026-11-01T07:14:58.303333",
+            "source": {
+              "type": "m",
+              "expression": "let Source = Sql.Database(\"ORLANDOCORONA\", \"cert_roi_latam\", [CreateNavigationProperties=false]), Data = Source{[Schema=\"dbo\",Item=\"vw_pbi_kpis\"]}[Data] in Data"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table",
+            "modifiedTime": "2026-10-29T22:42:13.686667"
+          }
+        ]
+      },
+      {
+        "name": "vw_pbi_roles",
+        "lineageTag": "2421a662-cbaf-4a91-8f84-abb250e8bcba",
+        "modifiedTime": "2026-10-29T22:42:13.666667",
+        "structureModifiedTime": "2026-10-29T22:42:13.666667",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2026-10-29T22:42:13.693333",
+            "structureModifiedTime": "2026-10-29T22:42:13.666667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:58.413333"
+            }
+          },
+          {
+            "name": "rol_id",
+            "dataType": "int64",
+            "sourceColumn": "rol_id",
+            "formatString": "0",
+            "lineageTag": "7ee2b9c6-f860-42ff-b459-5db94a0bc1f7",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:29.703333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:58.41"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "rol",
+            "dataType": "string",
+            "sourceColumn": "rol",
+            "lineageTag": "d6ceb5aa-972c-40ae-b006-7270ac9eb5bd",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:58.41"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "categoria_rol",
+            "dataType": "string",
+            "sourceColumn": "categoria_rol",
+            "lineageTag": "77bdcf2a-1cde-45ed-984c-a4405192bc6b",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:58.406667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "total_vacantes",
+            "dataType": "int64",
+            "sourceColumn": "total_vacantes",
+            "formatString": "0",
+            "lineageTag": "1b09524d-7609-478c-8359-8f8fc1d52b03",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:29.703333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:58.413333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "certs_mencionadas_distintas",
+            "dataType": "int64",
+            "sourceColumn": "certs_mencionadas_distintas",
+            "formatString": "0",
+            "lineageTag": "36280733-f7cd-4bfd-acdb-4045c58774f6",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:29.703333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:58.41"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vw_pbi_roles",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2026-11-01T07:13:12.346667",
+            "refreshedTime": "2026-11-01T07:14:58.33",
+            "source": {
+              "type": "m",
+              "expression": "let Source = Sql.Database(\"ORLANDOCORONA\", \"cert_roi_latam\", [CreateNavigationProperties=false]), Data = Source{[Schema=\"dbo\",Item=\"vw_pbi_roles\"]}[Data] in Data"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table",
+            "modifiedTime": "2026-10-29T22:42:13.686667"
+          }
+        ]
+      },
+      {
+        "name": "vw_pbi_vacantes_cert",
+        "lineageTag": "cead5666-a1c7-43d9-9b03-30a4b3c2fd1c",
+        "modifiedTime": "2026-10-29T22:42:13.666667",
+        "structureModifiedTime": "2026-10-29T22:42:13.666667",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2026-10-29T22:42:13.693333",
+            "structureModifiedTime": "2026-10-29T22:42:13.666667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:53.496667"
+            }
+          },
+          {
+            "name": "vacante_id",
+            "dataType": "int64",
+            "sourceColumn": "vacante_id",
+            "formatString": "0",
+            "lineageTag": "5b28cc93-1dce-4ca4-9f1b-76239f85a2e0",
+            "summarizeBy": "sum",
+            "modifiedTime": "2026-10-29T22:42:13.673333",
+            "structureModifiedTime": "2026-10-29T22:42:13.673333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:53.51"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "titulo",
+            "dataType": "string",
+            "sourceColumn": "titulo",
+            "lineageTag": "4e3c8769-dcb5-4157-9d5e-217d0166d1bf",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:53.523333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "modalidad",
+            "dataType": "string",
+            "sourceColumn": "modalidad",
+            "lineageTag": "0bc53c55-f6a6-41b5-8621-5a82fb8bbcb9",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.273333",
+              "refreshedTime": "2026-11-01T07:14:53.506667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "salario_medio_mxn",
+            "dataType": "double",
+            "sourceColumn": "salario_medio_mxn",
+            "lineageTag": "29db659c-a79d-47a1-b312-3f033bb2f5ff",
+            "summarizeBy": "sum",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:53.52"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "fecha_publicacion",
+            "dataType": "dateTime",
+            "sourceColumn": "fecha_publicacion",
+            "formatString": "Long Date",
+            "lineageTag": "e7b3a87d-5665-4be7-bc3b-1eb097a84bfa",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.28",
+              "refreshedTime": "2026-11-01T07:14:53.51"
+            },
+            "variations": [
+              {
+                "name": "Variation",
+                "relationship": "5d1a77e3-fddd-4b49-81f0-342d32e5bb43",
+                "defaultHierarchy": {
+                  "table": "LocalDateTable_cb156ec3-4281-43f9-8f7c-827fba0a6a8c",
+                  "hierarchy": "Jerarquía de fechas"
+                },
+                "isDefault": true
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "rol",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "rol",
+            "lineageTag": "fdc9bce4-413f-454c-b136-ae3d5383f779",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T23:15:17.873333",
+            "structureModifiedTime": "2026-10-29T23:15:17.873333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.28",
+              "refreshedTime": "2026-11-01T07:14:53.52"
+            },
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "categoria_rol",
+            "dataType": "string",
+            "sourceColumn": "categoria_rol",
+            "lineageTag": "71712af2-ceb0-4fdb-ab71-fa6bf3bfd2cc",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.28",
+              "refreshedTime": "2026-11-01T07:14:53.523333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "empresa",
+            "dataType": "string",
+            "sourceColumn": "empresa",
+            "lineageTag": "b7ac7ed7-ff17-48fd-a1c4-372ac05d61b9",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.28",
+              "refreshedTime": "2026-11-01T07:14:53.51"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "empresa_pais",
+            "dataType": "string",
+            "sourceColumn": "empresa_pais",
+            "lineageTag": "78ee4c2e-e094-48b5-9d4d-d49a12fc9574",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.28",
+              "refreshedTime": "2026-11-01T07:14:53.51"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "vacante_pais",
+            "dataType": "string",
+            "sourceColumn": "vacante_pais",
+            "lineageTag": "01a2321f-5b17-456b-b7dc-b332b0a90cb6",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.28",
+              "refreshedTime": "2026-11-01T07:14:53.506667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "region",
+            "dataType": "string",
+            "sourceColumn": "region",
+            "lineageTag": "ba3e560c-52be-4b62-bed5-ff432b7cbf58",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:53.523333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "fuente",
+            "dataType": "string",
+            "sourceColumn": "fuente",
+            "lineageTag": "e5446ea7-7c14-4790-89ca-5f23c58542c0",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:53.51"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "cert_codigo",
+            "dataType": "string",
+            "sourceColumn": "cert_codigo",
+            "lineageTag": "eb19c1b1-777f-4ff3-9bb6-dc028184a7ba",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:53.516667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "cert_nombre",
+            "dataType": "string",
+            "sourceColumn": "cert_nombre",
+            "lineageTag": "eafa8b5a-a50c-4f55-9507-630d8b79e27c",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:53.523333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "cert_categoria",
+            "dataType": "string",
+            "sourceColumn": "cert_categoria",
+            "lineageTag": "ebf03a81-df34-4c03-8882-492c66280ef4",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:53.523333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "proveedor",
+            "dataType": "string",
+            "sourceColumn": "proveedor",
+            "lineageTag": "1f8db0bc-f889-450e-8bc5-b97086944989",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:53.513333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "es_requerida",
+            "dataType": "boolean",
+            "sourceColumn": "es_requerida",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "lineageTag": "7c2fe332-4ec8-479f-9b88-2d64e3dddebc",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:53.51"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "name": "menciones",
+            "dataType": "int64",
+            "sourceColumn": "menciones",
+            "formatString": "0",
+            "lineageTag": "3e5c6c9d-10d7-42ef-adcc-889e7b49d0e6",
+            "summarizeBy": "sum",
+            "modifiedTime": "2026-10-29T22:42:13.676667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.276667",
+              "refreshedTime": "2026-11-01T07:14:53.523333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vw_pbi_vacantes_cert",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2026-11-01T07:13:12.346667",
+            "refreshedTime": "2026-11-01T07:14:53.49",
+            "source": {
+              "type": "m",
+              "expression": "let Source = Sql.Database(\"ORLANDOCORONA\", \"cert_roi_latam\", [CreateNavigationProperties=false]), Data = Source{[Schema=\"dbo\",Item=\"vw_pbi_vacantes_cert\"]}[Data] in Data"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table",
+            "modifiedTime": "2026-10-29T22:42:13.686667"
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_82b99e4f-169d-440c-a287-b47ec34fc6e8",
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "337e65d9-b215-4799-8837-f7d7d924e1fb",
+        "modifiedTime": "2026-10-29T22:42:13.666667",
+        "structureModifiedTime": "2026-10-29T22:42:13.666667",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2026-10-29T22:42:13.693333",
+            "structureModifiedTime": "2026-10-29T22:42:13.666667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.286667",
+              "refreshedTime": "2026-11-01T07:14:53.093333"
+            }
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[Date]",
+            "formatString": "General Date",
+            "lineageTag": "8b16070c-d6ea-4fd3-871e-12be4761b284",
+            "dataCategory": "PaddedDateTableDates",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.286667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.286667",
+              "refreshedTime": "2026-11-01T07:14:53.093333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Año",
+            "dataType": "int64",
+            "isHidden": true,
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "lineageTag": "a9be39de-712a-4f05-b3ca-7bf657d2b4db",
+            "dataCategory": "Years",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.296667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "2026-11-01T07:14:53.096667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.296667",
+              "refreshedTime": "2026-11-01T07:14:53.1"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "NroMes",
+            "dataType": "int64",
+            "isHidden": true,
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "lineageTag": "223af26d-0764-4527-80cb-4adf893a1618",
+            "dataCategory": "MonthOfYear",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.296667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "2026-11-01T07:14:53.096667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.296667",
+              "refreshedTime": "2026-11-01T07:14:53.1"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Mes",
+            "dataType": "string",
+            "isHidden": true,
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "sortByColumn": "NroMes",
+            "lineageTag": "a7f1ca02-1570-4220-a0f6-65c7e715ebf8",
+            "dataCategory": "Months",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.296667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "2026-11-01T07:14:53.096667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.3",
+              "refreshedTime": "2026-11-01T07:14:53.103333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "NroTrimestre",
+            "dataType": "int64",
+            "isHidden": true,
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "formatString": "0",
+            "lineageTag": "b9d266f7-33af-4273-9e13-9f6b42d78e3b",
+            "dataCategory": "QuarterOfYear",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.31",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "2026-11-01T07:14:53.103333",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.31",
+              "refreshedTime": "2026-11-01T07:14:53.123333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Trimestre",
+            "dataType": "string",
+            "isHidden": true,
+            "expression": "\"Trim. \" & [NroTrimestre]",
+            "sortByColumn": "NroTrimestre",
+            "lineageTag": "f97d9f1d-58d5-4cf5-8a38-e7b452dc3576",
+            "dataCategory": "Quarters",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.34",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "2026-11-01T07:14:53.123333",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.34",
+              "refreshedTime": "2026-11-01T07:14:53.126667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Día",
+            "dataType": "int64",
+            "isHidden": true,
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "lineageTag": "58b4abcc-bc77-4ef6-9e34-5bb2230de639",
+            "dataCategory": "DayOfMonth",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.296667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "2026-11-01T07:14:53.096667",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.296667",
+              "refreshedTime": "2026-11-01T07:14:53.1"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DateTableTemplate_82b99e4f-169d-440c-a287-b47ec34fc6e8",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2026-10-29T22:42:27.286667",
+            "refreshedTime": "2026-11-01T07:14:53.093333",
+            "source": {
+              "type": "calculated",
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "lineageTag": "3d6b2cf4-7399-4646-bcab-1ee543dcaff1",
+            "state": "ready",
+            "modifiedTime": "2026-10-29T22:42:27.346667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "2026-11-01T07:14:53.13",
+            "levels": [
+              {
+                "name": "Año",
+                "ordinal": 0,
+                "column": "Año",
+                "lineageTag": "0f3685a3-9454-4f4d-bb55-6019229f5174",
+                "modifiedTime": "2026-10-29T22:42:13.683333"
+              },
+              {
+                "name": "Trimestre",
+                "ordinal": 1,
+                "column": "Trimestre",
+                "lineageTag": "f2ee82af-66a9-4bd3-8b96-1491ec1ac55b",
+                "modifiedTime": "2026-10-29T22:42:13.683333"
+              },
+              {
+                "name": "Mes",
+                "ordinal": 2,
+                "column": "Mes",
+                "lineageTag": "ff1ca4c8-22c4-4e49-a63f-9c1f00e2e268",
+                "modifiedTime": "2026-10-29T22:42:13.683333"
+              },
+              {
+                "name": "Día",
+                "ordinal": 3,
+                "column": "Día",
+                "lineageTag": "ce1d0de0-5b8a-47de-93b9-c63766d036cc",
+                "modifiedTime": "2026-10-29T22:42:13.683333"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true",
+            "modifiedTime": "2026-10-29T22:42:13.686667"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy",
+            "modifiedTime": "2026-10-29T22:42:13.686667"
+          }
+        ]
+      },
+      {
+        "name": "LocalDateTable_cb156ec3-4281-43f9-8f7c-827fba0a6a8c",
+        "isHidden": true,
+        "showAsVariationsOnly": true,
+        "lineageTag": "6e6de518-d28c-4521-9ff9-ad354c20143a",
+        "modifiedTime": "2026-10-29T22:42:13.666667",
+        "structureModifiedTime": "2026-10-29T22:42:13.666667",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2026-10-29T22:42:13.693333",
+            "structureModifiedTime": "2026-10-29T22:42:13.666667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.3",
+              "refreshedTime": "2026-11-01T07:14:53.526667"
+            }
+          },
+          {
+            "type": "calculatedTableColumn",
+            "name": "Date",
+            "dataType": "dateTime",
+            "isNameInferred": true,
+            "isHidden": true,
+            "sourceColumn": "[Date]",
+            "formatString": "General Date",
+            "lineageTag": "68cd021b-91ca-47df-8754-5cc3a19e31b2",
+            "dataCategory": "PaddedDateTableDates",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.296667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.303333",
+              "refreshedTime": "2026-11-01T07:14:53.526667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Año",
+            "dataType": "int64",
+            "isHidden": true,
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "lineageTag": "85dd864d-382e-4f30-94de-be3e6d4e79d6",
+            "dataCategory": "Years",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.306667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "2026-11-01T07:14:53.54",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.306667",
+              "refreshedTime": "2026-11-01T07:14:53.543333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "NroMes",
+            "dataType": "int64",
+            "isHidden": true,
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "lineageTag": "bc691fe2-e5b7-4310-866b-24ab6602f59d",
+            "dataCategory": "MonthOfYear",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.306667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "2026-11-01T07:14:53.54",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.306667",
+              "refreshedTime": "2026-11-01T07:14:53.543333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Mes",
+            "dataType": "string",
+            "isHidden": true,
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "sortByColumn": "NroMes",
+            "lineageTag": "65e12f61-93bb-4b40-89ee-bba0982cbf49",
+            "dataCategory": "Months",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.31",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "2026-11-01T07:14:53.533333",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.31",
+              "refreshedTime": "2026-11-01T07:14:53.553333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "NroTrimestre",
+            "dataType": "int64",
+            "isHidden": true,
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "formatString": "0",
+            "lineageTag": "fda9a3a3-c941-4eb7-bb25-612ee51e003a",
+            "dataCategory": "QuarterOfYear",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.31",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "2026-11-01T07:14:53.543333",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.336667",
+              "refreshedTime": "2026-11-01T07:14:53.546667"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Trimestre",
+            "dataType": "string",
+            "isHidden": true,
+            "expression": "\"Trim. \" & [NroTrimestre]",
+            "sortByColumn": "NroTrimestre",
+            "lineageTag": "0d18d288-594e-45c3-bf82-383dffbdad3a",
+            "dataCategory": "Quarters",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.34",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "2026-11-01T07:14:53.553333",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.35",
+              "refreshedTime": "2026-11-01T07:14:53.553333"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          },
+          {
+            "type": "calculated",
+            "name": "Día",
+            "dataType": "int64",
+            "isHidden": true,
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "lineageTag": "3c6ea3fc-aca9-4ce7-a07e-32d1a78bf099",
+            "dataCategory": "DayOfMonth",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-10-29T22:42:27.306667",
+            "structureModifiedTime": "2026-10-29T22:42:13.676667",
+            "refreshedTime": "2026-11-01T07:14:53.53",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-10-29T22:42:27.306667",
+              "refreshedTime": "2026-11-01T07:14:53.53"
+            },
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          }
+        ],
+        "partitions": [
+          {
+            "name": "LocalDateTable_cb156ec3-4281-43f9-8f7c-827fba0a6a8c",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2026-10-29T22:42:27.296667",
+            "refreshedTime": "2026-11-01T07:14:53.523333",
+            "source": {
+              "type": "calculated",
+              "expression": "Calendar(Date(Year(MIN('vw_pbi_vacantes_cert'[fecha_publicacion])), 1, 1), Date(Year(MAX('vw_pbi_vacantes_cert'[fecha_publicacion])), 12, 31))"
+            }
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "lineageTag": "6651cbef-bf07-4829-9dc6-3e2f3e865e1a",
+            "state": "ready",
+            "modifiedTime": "2026-10-29T22:42:27.356667",
+            "structureModifiedTime": "2026-10-29T22:42:13.68",
+            "refreshedTime": "2026-11-01T07:14:53.56",
+            "levels": [
+              {
+                "name": "Año",
+                "ordinal": 0,
+                "column": "Año",
+                "lineageTag": "49d138d0-4519-4bf9-aec6-1f99e06e4730",
+                "modifiedTime": "2026-10-29T22:42:13.683333"
+              },
+              {
+                "name": "Trimestre",
+                "ordinal": 1,
+                "column": "Trimestre",
+                "lineageTag": "282bbd80-516a-4ad4-a6f6-814e96d41930",
+                "modifiedTime": "2026-10-29T22:42:13.683333"
+              },
+              {
+                "name": "Mes",
+                "ordinal": 2,
+                "column": "Mes",
+                "lineageTag": "e222e2ba-5486-4777-b79d-4e8d76f22e40",
+                "modifiedTime": "2026-10-29T22:42:13.683333"
+              },
+              {
+                "name": "Día",
+                "ordinal": 3,
+                "column": "Día",
+                "lineageTag": "b45829e1-1b7e-4f0d-9f39-bb0159e25a75",
+                "modifiedTime": "2026-10-29T22:42:13.683333"
+              }
+            ],
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy",
+                "modifiedTime": "2026-10-29T22:42:13.686667"
+              }
+            ]
+          }
+        ],
+        "annotations": [
+          {
+            "name": "__PBI_LocalDateTable",
+            "value": "true",
+            "modifiedTime": "2026-10-29T22:42:13.686667"
+          }
+        ]
+      },
+      {
+        "name": "vw_pbi_salarios_v2",
+        "description": "Importes USD originales; periodo pendiente de verificar. Una fila por vacante.",
+        "modifiedTime": "2026-11-01T07:14:51.743333",
+        "structureModifiedTime": "2026-11-01T07:14:51.743333",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2026-11-01T07:14:51.75",
+            "structureModifiedTime": "2026-11-01T07:14:51.743333",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.83",
+              "refreshedTime": "2026-11-01T07:14:54.83"
+            }
+          },
+          {
+            "name": "vacante_id",
+            "dataType": "int64",
+            "sourceColumn": "vacante_id",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.833333",
+              "refreshedTime": "2026-11-01T07:14:54.833333"
+            }
+          },
+          {
+            "name": "titulo",
+            "dataType": "string",
+            "sourceColumn": "titulo",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.833333",
+              "refreshedTime": "2026-11-01T07:14:54.833333"
+            }
+          },
+          {
+            "name": "minimo_usd",
+            "dataType": "decimal",
+            "sourceColumn": "minimo_usd",
+            "formatString": "#,0.00",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.83",
+              "refreshedTime": "2026-11-01T07:14:54.83"
+            }
+          },
+          {
+            "name": "maximo_usd",
+            "dataType": "decimal",
+            "sourceColumn": "maximo_usd",
+            "formatString": "#,0.00",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.83",
+              "refreshedTime": "2026-11-01T07:14:54.83"
+            }
+          },
+          {
+            "name": "periodo",
+            "dataType": "string",
+            "sourceColumn": "periodo",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.833333",
+              "refreshedTime": "2026-11-01T07:14:54.833333"
+            }
+          },
+          {
+            "name": "fuente",
+            "dataType": "string",
+            "sourceColumn": "fuente",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.833333",
+              "refreshedTime": "2026-11-01T07:14:54.833333"
+            }
+          },
+          {
+            "name": "salario_medio_mensual_usd",
+            "dataType": "decimal",
+            "sourceColumn": "salario_medio_mensual_usd",
+            "formatString": "#,0.00",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.836667",
+              "refreshedTime": "2026-11-01T07:14:54.836667"
+            }
+          },
+          {
+            "name": "calidad_salario",
+            "dataType": "string",
+            "sourceColumn": "calidad_salario",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.833333",
+              "refreshedTime": "2026-11-01T07:14:54.833333"
+            }
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vw_pbi_salarios_v2",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2026-11-01T07:14:54.823333",
+            "refreshedTime": "2026-11-01T07:14:54.823333",
+            "source": {
+              "type": "m",
+              "expression": "let Source = Sql.Database(\"ORLANDOCORONA\", \"cert_roi_latam\", [CreateNavigationProperties=false]), Data = Source{[Schema=\"dbo\",Item=\"vw_pbi_salarios_v2\"]}[Data] in Data"
+            }
+          }
+        ]
+      },
+      {
+        "name": "vw_pbi_roi_escenario_v2",
+        "description": "Simulacion de ROI incremental; no es retorno observado ni causal. Consultar supuestos y nota.",
+        "modifiedTime": "2026-11-01T07:14:51.746667",
+        "structureModifiedTime": "2026-11-01T07:14:51.746667",
+        "columns": [
+          {
+            "type": "rowNumber",
+            "name": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+            "dataType": "int64",
+            "isHidden": true,
+            "isUnique": true,
+            "isKey": true,
+            "isNullable": false,
+            "modifiedTime": "2026-11-01T07:14:51.75",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.703333",
+              "refreshedTime": "2026-11-01T07:14:54.703333"
+            }
+          },
+          {
+            "name": "cert_id",
+            "dataType": "int64",
+            "sourceColumn": "cert_id",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.703333",
+              "refreshedTime": "2026-11-01T07:14:54.703333"
+            }
+          },
+          {
+            "name": "codigo",
+            "dataType": "string",
+            "sourceColumn": "codigo",
+            "summarizeBy": "none",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.703333",
+              "refreshedTime": "2026-11-01T07:14:54.703333"
+            }
+          },
+          {
+            "name": "nombre_oficial",
+            "dataType": "string",
+            "sourceColumn": "nombre_oficial",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.706667",
+              "refreshedTime": "2026-11-01T07:14:54.706667"
+            }
+          },
+          {
+            "name": "proveedor",
+            "dataType": "string",
+            "sourceColumn": "proveedor",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.706667",
+              "refreshedTime": "2026-11-01T07:14:54.706667"
+            }
+          },
+          {
+            "name": "categoria",
+            "dataType": "string",
+            "sourceColumn": "categoria",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.706667",
+              "refreshedTime": "2026-11-01T07:14:54.706667"
+            }
+          },
+          {
+            "name": "nivel",
+            "dataType": "string",
+            "sourceColumn": "nivel",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.703333",
+              "refreshedTime": "2026-11-01T07:14:54.703333"
+            }
+          },
+          {
+            "name": "costo_examen_usd",
+            "dataType": "decimal",
+            "sourceColumn": "costo_examen_usd",
+            "formatString": "#,0.00",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.706667",
+              "refreshedTime": "2026-11-01T07:14:54.706667"
+            }
+          },
+          {
+            "name": "horas_estudio",
+            "dataType": "int64",
+            "sourceColumn": "horas_estudio",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.706667",
+              "refreshedTime": "2026-11-01T07:14:54.706667"
+            }
+          },
+          {
+            "name": "tc_usd_mxn",
+            "dataType": "decimal",
+            "sourceColumn": "tc_usd_mxn",
+            "formatString": "#,0.00",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.706667",
+              "refreshedTime": "2026-11-01T07:14:54.706667"
+            }
+          },
+          {
+            "name": "costo_hora_mxn",
+            "dataType": "decimal",
+            "sourceColumn": "costo_hora_mxn",
+            "formatString": "#,0.00",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.703333",
+              "refreshedTime": "2026-11-01T07:14:54.703333"
+            }
+          },
+          {
+            "name": "incremento_mensual_mxn",
+            "dataType": "decimal",
+            "sourceColumn": "incremento_mensual_mxn",
+            "formatString": "#,0.00",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.706667",
+              "refreshedTime": "2026-11-01T07:14:54.706667"
+            }
+          },
+          {
+            "name": "horizonte_meses",
+            "dataType": "int64",
+            "sourceColumn": "horizonte_meses",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.703333",
+              "refreshedTime": "2026-11-01T07:14:54.703333"
+            }
+          },
+          {
+            "name": "costos_adicionales_mxn",
+            "dataType": "decimal",
+            "sourceColumn": "costos_adicionales_mxn",
+            "formatString": "#,0.00",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.703333",
+              "refreshedTime": "2026-11-01T07:14:54.703333"
+            }
+          },
+          {
+            "name": "nota",
+            "dataType": "string",
+            "sourceColumn": "nota",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.703333",
+              "refreshedTime": "2026-11-01T07:14:54.703333"
+            }
+          },
+          {
+            "name": "costo_examen_mxn_escenario",
+            "dataType": "decimal",
+            "sourceColumn": "costo_examen_mxn_escenario",
+            "formatString": "#,0.00",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.706667",
+              "refreshedTime": "2026-11-01T07:14:54.706667"
+            }
+          },
+          {
+            "name": "inversion_total_mxn",
+            "dataType": "decimal",
+            "sourceColumn": "inversion_total_mxn",
+            "formatString": "#,0.00",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.703333",
+              "refreshedTime": "2026-11-01T07:14:54.703333"
+            }
+          },
+          {
+            "name": "beneficio_incremental_mxn",
+            "dataType": "decimal",
+            "sourceColumn": "beneficio_incremental_mxn",
+            "formatString": "#,0.00",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.703333",
+              "refreshedTime": "2026-11-01T07:14:54.703333"
+            }
+          },
+          {
+            "name": "beneficio_neto_mxn",
+            "dataType": "decimal",
+            "sourceColumn": "beneficio_neto_mxn",
+            "formatString": "#,0.00",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.706667",
+              "refreshedTime": "2026-11-01T07:14:54.706667"
+            }
+          },
+          {
+            "name": "roi_fraccion",
+            "dataType": "decimal",
+            "sourceColumn": "roi_fraccion",
+            "formatString": "0.0%",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.703333",
+              "refreshedTime": "2026-11-01T07:14:54.703333"
+            }
+          },
+          {
+            "name": "recuperacion_meses",
+            "dataType": "decimal",
+            "sourceColumn": "recuperacion_meses",
+            "formatString": "#,0.00",
+            "modifiedTime": "2026-11-01T07:14:51.746667",
+            "structureModifiedTime": "2026-11-01T07:14:51.746667",
+            "refreshedTime": "1699-12-31T00:00:00",
+            "attributeHierarchy": {
+              "state": "ready",
+              "modifiedTime": "2026-11-01T07:14:54.706667",
+              "refreshedTime": "2026-11-01T07:14:54.706667"
+            }
+          }
+        ],
+        "partitions": [
+          {
+            "name": "vw_pbi_roi_escenario_v2",
+            "mode": "import",
+            "state": "ready",
+            "modifiedTime": "2026-11-01T07:14:54.693333",
+            "refreshedTime": "2026-11-01T07:14:54.693333",
+            "source": {
+              "type": "m",
+              "expression": "let Source = Sql.Database(\"ORLANDOCORONA\", \"cert_roi_latam\", [CreateNavigationProperties=false]), Data = Source{[Schema=\"dbo\",Item=\"vw_pbi_roi_escenario_v2\"]}[Data] in Data"
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "5d1a77e3-fddd-4b49-81f0-342d32e5bb43",
+        "fromTable": "vw_pbi_vacantes_cert",
+        "fromColumn": "fecha_publicacion",
+        "toTable": "LocalDateTable_cb156ec3-4281-43f9-8f7c-827fba0a6a8c",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly",
+        "state": "ready",
+        "modifiedTime": "2026-10-29T22:42:27.323333",
+        "refreshedTime": "2026-11-01T07:14:53.526667"
+      },
+      {
+        "name": "AutoDetected_18abf52a-1b64-49cb-ac97-30551c849fbc",
+        "fromTable": "vw_pbi_vacantes_cert",
+        "fromColumn": "rol",
+        "toTable": "vw_pbi_roles",
+        "toColumn": "rol",
+        "state": "ready",
+        "modifiedTime": "2026-10-29T22:42:29.796667",
+        "refreshedTime": "2026-11-01T07:14:58.41"
+      },
+      {
+        "name": "b8bd29db-dcc7-316f-8a05-bfed00052674",
+        "fromTable": "vw_pbi_vacantes_cert",
+        "fromColumn": "cert_codigo",
+        "toTable": "vw_pbi_cert_roi",
+        "toColumn": "codigo",
+        "state": "ready",
+        "modifiedTime": "2026-10-30T01:18:46.296667",
+        "refreshedTime": "2026-11-01T07:14:54.016667"
+      },
+      {
+        "name": "ROI_por_cert",
+        "fromTable": "vw_pbi_roi_escenario_v2",
+        "fromColumn": "cert_id",
+        "toTable": "vw_pbi_cert_roi",
+        "toColumn": "cert_id",
+        "state": "ready",
+        "modifiedTime": "2026-11-01T07:14:54.706667",
+        "refreshedTime": "2026-11-01T07:14:54.706667"
+      },
+      {
+        "name": "Salario_por_vacante",
+        "fromTable": "vw_pbi_vacantes_cert",
+        "fromColumn": "vacante_id",
+        "toTable": "vw_pbi_salarios_v2",
+        "toColumn": "vacante_id",
+        "state": "ready",
+        "modifiedTime": "2026-11-01T07:14:54.833333",
+        "refreshedTime": "2026-11-01T07:14:54.833333"
+      }
+    ],
+    "cultures": [
+      {
+        "name": "es-MX",
+        "modifiedTime": "2026-10-29T22:35:32.09",
+        "structureModifiedTime": "2026-10-29T22:35:32.09"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1",
+        "modifiedTime": "2026-10-29T22:35:32.12"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"vw_pbi_cert_roi\",\"vw_pbi_kpis\",\"vw_pbi_roles\",\"vw_pbi_vacantes_cert\"]",
+        "modifiedTime": "2026-10-29T23:16:42.253333"
+      }
+    ]
+  }
+}

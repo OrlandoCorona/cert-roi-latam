@@ -1,4 +1,4 @@
-USE cert_roi_latam;
+﻿USE cert_roi_latam;
 GO
 
 CREATE OR ALTER PROCEDURE dbo.sp_cargar_json_getonboard
@@ -11,7 +11,7 @@ BEGIN
     DECLARE @sql NVARCHAR(MAX);
     DECLARE @json NVARCHAR(MAX);
 
-    SET @sql = N'SELECT @j = BulkColumn FROM OPENROWSET(BULK ''' + @path + ''', SINGLE_CLOB) AS t;';
+    SET @sql = N'SELECT @j = BulkColumn FROM OPENROWSET(BULK ''' + REPLACE(@path, '''', '''''') + ''', SINGLE_CLOB, CODEPAGE = ''65001'') AS t;';
     EXEC sp_executesql @sql, N'@j NVARCHAR(MAX) OUTPUT', @j = @json OUTPUT;
 
     DECLARE @fuente_id INT = (SELECT fuente_id FROM dbo.dim_fuente WHERE nombre = 'GetOnBoard');
@@ -110,36 +110,14 @@ BEGIN
         u.ubicacion_id,
         @fuente_id,
         LEFT(t.titulo, 300),
-        CASE WHEN t.company_country = 'CL' THEN t.min_sal * 0.021
-             WHEN t.company_country = 'AR' THEN t.min_sal * 0.013
-             WHEN t.company_country = 'CO' THEN t.min_sal * 0.0048
-             WHEN t.company_country = 'PE' THEN t.min_sal * 5.3
-             WHEN t.company_country = 'UY' THEN t.min_sal * 0.47
-             WHEN t.company_country = 'BR' THEN t.min_sal * 3.5
-             ELSE t.min_sal * 20.0 END,
-        CASE WHEN t.company_country = 'CL' THEN t.max_sal * 0.021
-             WHEN t.company_country = 'AR' THEN t.max_sal * 0.013
-             WHEN t.company_country = 'CO' THEN t.max_sal * 0.0048
-             WHEN t.company_country = 'PE' THEN t.max_sal * 5.3
-             WHEN t.company_country = 'UY' THEN t.max_sal * 0.47
-             WHEN t.company_country = 'BR' THEN t.max_sal * 3.5
-             ELSE t.max_sal * 20.0 END,
-        CASE WHEN t.min_sal IS NOT NULL AND t.max_sal IS NOT NULL
-             THEN ((t.min_sal + t.max_sal) / 2) *
-                CASE t.company_country
-                    WHEN 'CL' THEN 0.021 WHEN 'AR' THEN 0.013 WHEN 'CO' THEN 0.0048
-                    WHEN 'PE' THEN 5.3 WHEN 'UY' THEN 0.47 WHEN 'BR' THEN 3.5
-                    ELSE 20.0 END
-             ELSE NULL END,
-        CASE WHEN t.min_sal IS NOT NULL OR t.max_sal IS NOT NULL
-             THEN CONCAT(ISNULL(CAST(t.min_sal AS NVARCHAR(50)),''),'-',ISNULL(CAST(t.max_sal AS NVARCHAR(50)),''),' ',ISNULL(t.company_country,''))
-             ELSE NULL END,
+        NULL, NULL, NULL, -- No convertir USD por pais ni asumir periodo
+        CONCAT(N'USD bruto; periodo por verificar; min=',t.min_sal,N'; max=',t.max_sal),
         CASE t.remote_modality
             WHEN 'fully_remote' THEN 'remoto'
             WHEN 'hybrid' THEN 'hibrido'
             WHEN 'office' THEN 'presencial'
             ELSE NULL END,
-        LEFT(t.descripcion_raw, 8000),
+        t.descripcion_raw,
         LEFT(t.public_url, 500),
         CASE WHEN t.published_at IS NOT NULL
              THEN CAST(DATEADD(SECOND, t.published_at, '1970-01-01') AS DATE)

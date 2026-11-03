@@ -1,0 +1,169 @@
+table vw_pbi_vacantes_cert
+	lineageTag: cead5666-a1c7-43d9-9b03-30a4b3c2fd1c
+
+	column vacante_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 5b28cc93-1dce-4ca4-9f1b-76239f85a2e0
+		summarizeBy: sum
+		sourceColumn: vacante_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column titulo
+		dataType: string
+		lineageTag: 4e3c8769-dcb5-4157-9d5e-217d0166d1bf
+		summarizeBy: none
+		sourceColumn: titulo
+
+		annotation SummarizationSetBy = Automatic
+
+	column modalidad
+		dataType: string
+		lineageTag: 0bc53c55-f6a6-41b5-8621-5a82fb8bbcb9
+		summarizeBy: none
+		sourceColumn: modalidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column salario_medio_mxn
+		dataType: double
+		lineageTag: 29db659c-a79d-47a1-b312-3f033bb2f5ff
+		summarizeBy: sum
+		sourceColumn: salario_medio_mxn
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fecha_publicacion
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e7b3a87d-5665-4be7-bc3b-1eb097a84bfa
+		summarizeBy: none
+		sourceColumn: fecha_publicacion
+
+		variation Variation
+			isDefault
+			relationship: 5d1a77e3-fddd-4b49-81f0-342d32e5bb43
+			defaultHierarchy: LocalDateTable_cb156ec3-4281-43f9-8f7c-827fba0a6a8c.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column rol
+		dataType: string
+		isHidden
+		lineageTag: fdc9bce4-413f-454c-b136-ae3d5383f779
+		summarizeBy: none
+		sourceColumn: rol
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria_rol
+		dataType: string
+		lineageTag: 71712af2-ceb0-4fdb-ab71-fa6bf3bfd2cc
+		summarizeBy: none
+		sourceColumn: categoria_rol
+
+		annotation SummarizationSetBy = Automatic
+
+	column empresa
+		dataType: string
+		lineageTag: b7ac7ed7-ff17-48fd-a1c4-372ac05d61b9
+		summarizeBy: none
+		sourceColumn: empresa
+
+		annotation SummarizationSetBy = Automatic
+
+	column empresa_pais
+		dataType: string
+		lineageTag: 78ee4c2e-e094-48b5-9d4d-d49a12fc9574
+		summarizeBy: none
+		sourceColumn: empresa_pais
+
+		annotation SummarizationSetBy = Automatic
+
+	column vacante_pais
+		dataType: string
+		lineageTag: 01a2321f-5b17-456b-b7dc-b332b0a90cb6
+		summarizeBy: none
+		sourceColumn: vacante_pais
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: ba3e560c-52be-4b62-bed5-ff432b7cbf58
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column fuente
+		dataType: string
+		lineageTag: e5446ea7-7c14-4790-89ca-5f23c58542c0
+		summarizeBy: none
+		sourceColumn: fuente
+
+		annotation SummarizationSetBy = Automatic
+
+	column cert_codigo
+		dataType: string
+		lineageTag: eb19c1b1-777f-4ff3-9bb6-dc028184a7ba
+		summarizeBy: none
+		sourceColumn: cert_codigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column cert_nombre
+		dataType: string
+		lineageTag: eafa8b5a-a50c-4f55-9507-630d8b79e27c
+		summarizeBy: none
+		sourceColumn: cert_nombre
+
+		annotation SummarizationSetBy = Automatic
+
+	column cert_categoria
+		dataType: string
+		lineageTag: ebf03a81-df34-4c03-8882-492c66280ef4
+		summarizeBy: none
+		sourceColumn: cert_categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column proveedor
+		dataType: string
+		lineageTag: 1f8db0bc-f889-450e-8bc5-b97086944989
+		summarizeBy: none
+		sourceColumn: proveedor
+
+		annotation SummarizationSetBy = Automatic
+
+	column es_requerida
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 7c2fe332-4ec8-479f-9b88-2d64e3dddebc
+		summarizeBy: none
+		sourceColumn: es_requerida
+
+		annotation SummarizationSetBy = Automatic
+
+	column menciones
+		dataType: int64
+		formatString: 0
+		lineageTag: 3e5c6c9d-10d7-42ef-adcc-889e7b49d0e6
+		summarizeBy: sum
+		sourceColumn: menciones
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_pbi_vacantes_cert = m
+		mode: import
+		source = let Source = Sql.Database("ORLANDOCORONA", "cert_roi_latam", [CreateNavigationProperties=false]), Data = Source{[Schema="dbo",Item="vw_pbi_vacantes_cert"]}[Data] in Data
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,26 @@
+model Model
+	culture: es-MX
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: es-MX
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["vw_pbi_cert_roi","vw_pbi_kpis","vw_pbi_roles","vw_pbi_vacantes_cert"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table vw_pbi_cert_roi
+ref table vw_pbi_kpis
+ref table vw_pbi_roles
+ref table vw_pbi_vacantes_cert
+ref table DateTableTemplate_82b99e4f-169d-440c-a287-b47ec34fc6e8
+ref table LocalDateTable_cb156ec3-4281-43f9-8f7c-827fba0a6a8c
+ref table vw_pbi_salarios_v2
+ref table vw_pbi_roi_escenario_v2
+
+ref cultureInfo es-MX
+

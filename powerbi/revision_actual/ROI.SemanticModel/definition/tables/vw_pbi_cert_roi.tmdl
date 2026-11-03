@@ -1,0 +1,215 @@
+table vw_pbi_cert_roi
+	lineageTag: ca0f4028-4b56-412c-9aa5-3122bd7d5225
+
+	measure 'Total Certs' = COUNTROWS(vw_pbi_cert_roi)
+		formatString: #,0
+		lineageTag: d66bdb71-4564-4739-8eed-51f76e95b68d
+
+	measure 'Vacantes Analizadas' = SUM(vw_pbi_kpis[total_vacantes])
+		formatString: #,0
+		lineageTag: 2f27ac38-b21a-4b16-bd93-4211f0d8f465
+
+	measure 'Inversión Promedio MXN' = AVERAGE(vw_pbi_roi_escenario_v2[inversion_total_mxn])
+		formatString: #,0
+		lineageTag: 03a370d7-4260-4380-9a6d-25ab0ceb9b44
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Vacantes con Cert' = SUM(vw_pbi_kpis[vacantes_con_cert])
+		formatString: #,0
+		lineageTag: 77364bb8-6802-4d13-ae04-9fba2d5c6da2
+
+	measure '% Mercado con Cert' = DIVIDE([Vacantes con Cert], [Vacantes Analizadas], 0)
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 5e042aac-cac4-4170-b0a2-2d7de025d202
+
+	/// Promedio del escenario de ROI incremental bajo los supuestos de la tabla v2. No retorno observado.
+	measure 'ROI Promedio' = AVERAGE(vw_pbi_roi_escenario_v2[roi_fraccion])
+		formatString: 0.0%
+		lineageTag: b8516b96-3cf8-426c-bd4b-2af06e6d79ad
+
+	/// Maximo del escenario; no evidencia de mayor retorno real de una certificacion.
+	measure 'Mejor ROI' = MAX(vw_pbi_roi_escenario_v2[roi_fraccion])
+		formatString: 0.0%
+		lineageTag: ab79b037-4d91-420f-a62b-9d10b75c9fdf
+
+	column cert_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 41469dd8-211b-42fa-a339-032bb8610846
+		summarizeBy: none
+		sourceColumn: cert_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column codigo
+		dataType: string
+		lineageTag: 7edfffe0-0cb5-4529-a656-c7407f1ecefb
+		summarizeBy: none
+		sourceColumn: codigo
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre_oficial
+		dataType: string
+		lineageTag: d56bf125-31b0-45d4-ba91-d6d143904f25
+		summarizeBy: none
+		sourceColumn: nombre_oficial
+
+		annotation SummarizationSetBy = Automatic
+
+	column proveedor
+		dataType: string
+		lineageTag: cc2f2378-5f62-4e9f-b92b-f2237b0dbb2f
+		summarizeBy: none
+		sourceColumn: proveedor
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria
+		dataType: string
+		lineageTag: 9a84f4da-30bb-4ebc-8bad-fc12d471b141
+		summarizeBy: none
+		sourceColumn: categoria
+
+		annotation SummarizationSetBy = Automatic
+
+	column nivel
+		dataType: string
+		lineageTag: 75567c6e-7aa5-49cd-8567-451f17f3b5ec
+		summarizeBy: none
+		sourceColumn: nivel
+
+		annotation SummarizationSetBy = Automatic
+
+	column costo_examen_usd
+		dataType: double
+		lineageTag: 768f404a-41bf-4f90-b3e7-10ae508d7dd5
+		summarizeBy: none
+		sourceColumn: costo_examen_usd
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column costo_examen_mxn
+		dataType: double
+		lineageTag: 769f2a48-2883-4fb0-9138-f6fd00803fbd
+		summarizeBy: none
+		sourceColumn: costo_examen_mxn
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column horas_estudio
+		dataType: int64
+		formatString: 0
+		lineageTag: 02a00ced-62e0-4fd7-9f03-fd0e07397e00
+		summarizeBy: none
+		sourceColumn: horas_estudio
+
+		annotation SummarizationSetBy = Automatic
+
+	column vigencia_anios
+		dataType: int64
+		formatString: 0
+		lineageTag: 4a602b12-a92c-442f-b96b-c01605b2db69
+		summarizeBy: none
+		sourceColumn: vigencia_anios
+
+		annotation SummarizationSetBy = Automatic
+
+	column inversion_total_mxn
+		dataType: double
+		lineageTag: e132c9f9-90d1-4227-a07b-6506276af035
+		summarizeBy: none
+		sourceColumn: inversion_total_mxn
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column vacantes_con_cert
+		dataType: int64
+		formatString: #,0
+		lineageTag: c9fa3389-9f56-4129-ae31-a43f41d469c3
+		summarizeBy: none
+		sourceColumn: vacantes_con_cert
+
+		annotation SummarizationSetBy = Automatic
+
+	column porcentaje_mercado
+		dataType: double
+		lineageTag: 12244403-b031-4839-b6db-d31d77487f62
+		summarizeBy: none
+		sourceColumn: porcentaje_mercado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salario_promedio_global_usd
+		dataType: double
+		lineageTag: ae155308-6c40-43fe-a16f-717686e36393
+		summarizeBy: none
+		sourceColumn: salario_promedio_global_usd
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salario_promedio_global_mxn
+		dataType: double
+		lineageTag: 3fce6d50-4006-45ab-baf9-36e129297efa
+		summarizeBy: none
+		sourceColumn: salario_promedio_global_mxn
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column salario_promedio_latam_mxn
+		dataType: double
+		lineageTag: bd121210-f68f-43d7-bbae-1882a31d8ab1
+		summarizeBy: none
+		sourceColumn: salario_promedio_latam_mxn
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column roi_3_anios_estimado
+		dataType: double
+		lineageTag: 97389e26-66f0-4f86-91e1-72027824e175
+		summarizeBy: none
+		sourceColumn: roi_3_anios_estimado
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column dias_para_recuperar_inversion
+		dataType: double
+		lineageTag: 62341b32-f2c7-4db7-ad93-ba454a354144
+		summarizeBy: none
+		sourceColumn: dias_para_recuperar_inversion
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column calidad_muestra
+		dataType: string
+		lineageTag: b88c72ca-b2f9-4186-a57e-c64582e5ee9d
+		summarizeBy: none
+		sourceColumn: calidad_muestra
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_pbi_cert_roi = m
+		mode: import
+		source = let Source = Sql.Database("ORLANDOCORONA", "cert_roi_latam", [CreateNavigationProperties=false]), Data = Source{[Schema="dbo",Item="vw_pbi_cert_roi"]}[Data] in Data
+
+	annotation PBI_ResultType = Table
+

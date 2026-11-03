@@ -1,0 +1,63 @@
+NOMBRES_CLOUD: dict[str, list[str]] = {
+    "AWS_CLF": [
+        "AWS Certified Cloud Practitioner",
+        "AWS Cloud Practitioner",
+        "CLF-C02",
+        "CLF-C01",
+        "Cloud Practitioner AWS",
+    ],
+    "AWS_SAA": [
+        "AWS Certified Solutions Architect Associate",
+        "AWS Solutions Architect Associate",
+        "AWS Solutions Architect",
+        "AWS SAA",
+        "SAA-C03",
+        "SAA-C02",
+        "Arquitecto de Soluciones AWS",
+        "Arquitecto AWS",
+    ],
+    "AWS_DVA": [
+        "AWS Certified Developer Associate",
+        "AWS Developer Associate",
+        "AWS DVA",
+        "DVA-C02",
+        "DVA-C01",
+        "Desarrollador AWS",
+    ],
+    "AZ_900": [
+        "AZ-900",
+        "Azure Fundamentals",
+        "Microsoft Azure Fundamentals",
+        "Fundamentos de Azure",
+    ],
+    "AZ_104": [
+        "AZ-104",
+        "Azure Administrator",
+        "Azure Administrator Associate",
+        "Administrador de Azure",
+    ],
+    "AZ_DP203": [
+        "DP-203",
+        "Azure Data Engineer",
+        "Azure Data Engineer Associate",
+        "Ingeniero de Datos Azure",
+    ],
+    "GCP_ACE": [
+        "Associate Cloud Engineer",
+        "GCP Associate Cloud Engineer",
+        "Google Cloud Associate",
+        "Ingeniero Cloud Asociado GCP",
+    ],
+    "GCP_PCA": [
+        "Professional Cloud Architect",
+        "GCP Professional Cloud Architect",
+        "Google Cloud Architect",
+        "Arquitecto Cloud GCP",
+    ],
+    "GCP_PDE": [
+        "Professional Data Engineer",
+        "GCP Data Engineer",
+        "Google Cloud Data Engineer",
+        "Ingeniero de Datos GCP",
+    ],
+}

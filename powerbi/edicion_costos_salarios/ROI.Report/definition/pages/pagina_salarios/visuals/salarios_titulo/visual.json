@@ -1,0 +1,36 @@
+﻿{
+    "$schema":  "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+    "name":  "salarios_titulo",
+    "position":  {
+                     "x":  40,
+                     "y":  15,
+                     "width":  1840,
+                     "height":  55,
+                     "z":  0,
+                     "tabOrder":  0
+                 },
+    "visual":  {
+                   "visualType":  "textbox",
+                   "objects":  {
+                                   "general":  [
+                                                   {
+                                                       "properties":  {
+                                                                          "paragraphs":  [
+                                                                                             {
+                                                                                                 "textRuns":  [
+                                                                                                                  {
+                                                                                                                      "value":  "Importes salariales publicados | LATAM",
+                                                                                                                      "textStyle":  {
+                                                                                                                                        "fontSize":  "28pt",
+                                                                                                                                        "fontFamily":  "Segoe UI"
+                                                                                                                                    }
+                                                                                                                  }
+                                                                                                              ]
+                                                                                             }
+                                                                                         ]
+                                                                      }
+                                                   }
+                                               ]
+                               }
+               }
+}

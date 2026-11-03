@@ -1,0 +1,121 @@
+/// Simulacion de ROI incremental; no es retorno observado ni causal. Consultar supuestos y nota.
+table vw_pbi_roi_escenario_v2
+	lineageTag: 00646ff6-61a6-4095-9c41-27c94298f79d
+
+	column cert_id
+		dataType: int64
+		lineageTag: f81054af-9093-4bef-86e6-01f289ab3a88
+		summarizeBy: none
+		sourceColumn: cert_id
+
+	column codigo
+		dataType: string
+		lineageTag: eabb3c17-0455-4b14-9cd9-f7c92234b36d
+		summarizeBy: none
+		sourceColumn: codigo
+
+	column nombre_oficial
+		dataType: string
+		lineageTag: ea1bba3d-16c4-4e77-a7b7-c7d3d1c04998
+		sourceColumn: nombre_oficial
+
+	column proveedor
+		dataType: string
+		lineageTag: 60dbadf7-0f8d-4a55-9fe6-ca8f6b9121dd
+		sourceColumn: proveedor
+
+	column categoria
+		dataType: string
+		lineageTag: 89ee24bb-6d0c-4b90-ad97-c9127543f052
+		sourceColumn: categoria
+
+	column nivel
+		dataType: string
+		lineageTag: 1ff927a8-983e-4437-ab12-1d75a80b7e10
+		sourceColumn: nivel
+
+	column costo_examen_usd
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: eb70cdc2-5b87-4621-9f8d-e4e6ab15d323
+		sourceColumn: costo_examen_usd
+
+	column horas_estudio
+		dataType: int64
+		lineageTag: 93b1bfd8-b562-4550-91fd-5d72630dfe9e
+		sourceColumn: horas_estudio
+
+	column tc_usd_mxn
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 6e1a2a02-b6f3-446c-8a3d-bc6198512af1
+		sourceColumn: tc_usd_mxn
+
+	column costo_hora_mxn
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 0e4d834c-b5ed-4d1a-85b8-d629a1befa3d
+		sourceColumn: costo_hora_mxn
+
+	column incremento_mensual_mxn
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 298daf3e-2e2c-42fa-a23b-44c84ecf6ebb
+		sourceColumn: incremento_mensual_mxn
+
+	column horizonte_meses
+		dataType: int64
+		lineageTag: 3c5fe902-ce15-417a-81f9-b720cab8198d
+		sourceColumn: horizonte_meses
+
+	column costos_adicionales_mxn
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: a34368c3-25f4-47c3-8fb6-c107988fc2d9
+		sourceColumn: costos_adicionales_mxn
+
+	column nota
+		dataType: string
+		lineageTag: 68d5f693-30d5-4f94-b28c-56cbf79b3c4e
+		sourceColumn: nota
+
+	column costo_examen_mxn_escenario
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 00cf6ed5-0400-46b7-9bd2-4e3e52ada819
+		sourceColumn: costo_examen_mxn_escenario
+
+	column inversion_total_mxn
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 971f3f07-b967-4e0c-8dba-d8a5bb16e0e6
+		sourceColumn: inversion_total_mxn
+
+	column beneficio_incremental_mxn
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 21993bc4-0668-4c8a-b9c9-092aaafcc401
+		sourceColumn: beneficio_incremental_mxn
+
+	column beneficio_neto_mxn
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: df788de3-2b51-490b-99e6-62a14214eb8d
+		sourceColumn: beneficio_neto_mxn
+
+	column roi_fraccion
+		dataType: decimal
+		formatString: 0.0%
+		lineageTag: 5b45916b-eea3-4f35-abf0-b80f26313a75
+		sourceColumn: roi_fraccion
+
+	column recuperacion_meses
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 304be16d-8037-4894-a517-47650d141d0a
+		sourceColumn: recuperacion_meses
+
+	partition vw_pbi_roi_escenario_v2 = m
+		mode: import
+		source = let Source = Sql.Database("ORLANDOCORONA", "cert_roi_latam", [CreateNavigationProperties=false]), Data = Source{[Schema="dbo",Item="vw_pbi_roi_escenario_v2"]}[Data] in Data
+

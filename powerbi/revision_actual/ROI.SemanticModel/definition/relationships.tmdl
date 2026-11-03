@@ -1,0 +1,21 @@
+relationship 5d1a77e3-fddd-4b49-81f0-342d32e5bb43
+	joinOnDateBehavior: datePartOnly
+	fromColumn: vw_pbi_vacantes_cert.fecha_publicacion
+	toColumn: LocalDateTable_cb156ec3-4281-43f9-8f7c-827fba0a6a8c.Date
+
+relationship AutoDetected_18abf52a-1b64-49cb-ac97-30551c849fbc
+	fromColumn: vw_pbi_vacantes_cert.rol
+	toColumn: vw_pbi_roles.rol
+
+relationship b8bd29db-dcc7-316f-8a05-bfed00052674
+	fromColumn: vw_pbi_vacantes_cert.cert_codigo
+	toColumn: vw_pbi_cert_roi.codigo
+
+relationship ROI_por_cert
+	fromColumn: vw_pbi_roi_escenario_v2.cert_id
+	toColumn: vw_pbi_cert_roi.cert_id
+
+relationship Salario_por_vacante
+	fromColumn: vw_pbi_vacantes_cert.vacante_id
+	toColumn: vw_pbi_salarios_v2.vacante_id
+

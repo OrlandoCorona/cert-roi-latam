@@ -1,0 +1,52 @@
+/// Importes USD originales; periodo pendiente de verificar. Una fila por vacante.
+table vw_pbi_salarios_v2
+	lineageTag: 40021448-f280-4d05-a760-65e529383bd7
+
+	column vacante_id
+		dataType: int64
+		lineageTag: 93e07203-578a-4d79-a296-6cc1388c221a
+		summarizeBy: none
+		sourceColumn: vacante_id
+
+	column titulo
+		dataType: string
+		lineageTag: b3717c7f-1708-4028-b5bd-0317d0f5c8b1
+		sourceColumn: titulo
+
+	column minimo_usd
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: c464d89f-3fb1-4b3e-b8a5-3730a3ca4586
+		sourceColumn: minimo_usd
+
+	column maximo_usd
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 01d3088d-c8e1-4909-b59f-3e4127ad0219
+		sourceColumn: maximo_usd
+
+	column periodo
+		dataType: string
+		lineageTag: 5de64264-c1c3-4222-9f69-71d2e83665fd
+		sourceColumn: periodo
+
+	column fuente
+		dataType: string
+		lineageTag: 8c13ac3f-4cff-416e-a10b-f95eb207335c
+		sourceColumn: fuente
+
+	column salario_medio_mensual_usd
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 0808d435-0724-497d-ae59-05ffb14ccbc1
+		sourceColumn: salario_medio_mensual_usd
+
+	column calidad_salario
+		dataType: string
+		lineageTag: 6150b296-0a3c-447c-8443-177703496907
+		sourceColumn: calidad_salario
+
+	partition vw_pbi_salarios_v2 = m
+		mode: import
+		source = let Source = Sql.Database("ORLANDOCORONA", "cert_roi_latam", [CreateNavigationProperties=false]), Data = Source{[Schema="dbo",Item="vw_pbi_salarios_v2"]}[Data] in Data
+

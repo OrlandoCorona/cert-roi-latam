@@ -1,0 +1,64 @@
+table vw_pbi_kpis
+	lineageTag: a75f2cf7-93a9-484c-a6ce-7103df74d5b8
+
+	column total_vacantes
+		dataType: int64
+		formatString: 0
+		lineageTag: ea09328e-daec-4611-9ff1-f279f9d35544
+		summarizeBy: sum
+		sourceColumn: total_vacantes
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_empresas
+		dataType: int64
+		formatString: 0
+		lineageTag: e275616d-2a4d-45a6-9ede-95801332b782
+		summarizeBy: sum
+		sourceColumn: total_empresas
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_certificaciones
+		dataType: int64
+		formatString: 0
+		lineageTag: 92f18d5f-7086-48fc-a41e-ea4ade617d2f
+		summarizeBy: sum
+		sourceColumn: total_certificaciones
+
+		annotation SummarizationSetBy = Automatic
+
+	column vacantes_con_cert
+		dataType: int64
+		formatString: 0
+		lineageTag: fb05130f-badd-4559-9a00-d72113866e29
+		summarizeBy: sum
+		sourceColumn: vacantes_con_cert
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_menciones
+		dataType: int64
+		formatString: 0
+		lineageTag: e5cfab3e-09e7-40eb-9750-2c6efe4102c1
+		summarizeBy: sum
+		sourceColumn: total_menciones
+
+		annotation SummarizationSetBy = Automatic
+
+	column pct_vacantes_con_cert
+		dataType: double
+		lineageTag: 5e80f558-49ae-4ce1-8115-95dcbe6553cf
+		summarizeBy: sum
+		sourceColumn: pct_vacantes_con_cert
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition vw_pbi_kpis = m
+		mode: import
+		source = let Source = Sql.Database("ORLANDOCORONA", "cert_roi_latam", [CreateNavigationProperties=false]), Data = Source{[Schema="dbo",Item="vw_pbi_kpis"]}[Data] in Data
+
+	annotation PBI_ResultType = Table
+

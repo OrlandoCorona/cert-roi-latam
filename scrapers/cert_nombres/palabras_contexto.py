@@ -1,0 +1,30 @@
+PALABRAS_REQUERIDO: list[str] = [
+    "requerido",
+    "requerida",
+    "indispensable",
+    "obligatorio",
+    "obligatoria",
+    "mandatory",
+    "required",
+    "must have",
+    "imprescindible",
+    "necesario",
+    "necesaria",
+]
+
+PALABRAS_OPCIONAL: list[str] = [
+    "deseable",
+    "deseado",
+    "deseada",
+    "nice to have",
+    "plus",
+    "preferible",
+    "preferido",
+    "preferida",
+    "preferred",
+    "ventaja",
+    "ideal",
+    "opcional",
+    "valorable",
+    "a favor",
+]

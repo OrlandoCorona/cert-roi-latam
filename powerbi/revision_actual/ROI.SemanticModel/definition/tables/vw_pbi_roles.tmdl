@@ -1,0 +1,52 @@
+table vw_pbi_roles
+	lineageTag: 2421a662-cbaf-4a91-8f84-abb250e8bcba
+
+	column rol_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 7ee2b9c6-f860-42ff-b459-5db94a0bc1f7
+		summarizeBy: none
+		sourceColumn: rol_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column rol
+		dataType: string
+		lineageTag: d6ceb5aa-972c-40ae-b006-7270ac9eb5bd
+		summarizeBy: none
+		sourceColumn: rol
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria_rol
+		dataType: string
+		lineageTag: 77bdcf2a-1cde-45ed-984c-a4405192bc6b
+		summarizeBy: none
+		sourceColumn: categoria_rol
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_vacantes
+		dataType: int64
+		formatString: 0
+		lineageTag: 1b09524d-7609-478c-8359-8f8fc1d52b03
+		summarizeBy: none
+		sourceColumn: total_vacantes
+
+		annotation SummarizationSetBy = Automatic
+
+	column certs_mencionadas_distintas
+		dataType: int64
+		formatString: 0
+		lineageTag: 36280733-f7cd-4bfd-acdb-4045c58774f6
+		summarizeBy: none
+		sourceColumn: certs_mencionadas_distintas
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_pbi_roles = m
+		mode: import
+		source = let Source = Sql.Database("ORLANDOCORONA", "cert_roi_latam", [CreateNavigationProperties=false]), Data = Source{[Schema="dbo",Item="vw_pbi_roles"]}[Data] in Data
+
+	annotation PBI_ResultType = Table
+

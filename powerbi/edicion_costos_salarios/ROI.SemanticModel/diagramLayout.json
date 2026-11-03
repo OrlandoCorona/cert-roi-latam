@@ -1,0 +1,98 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 45.975905269025318,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 50,
+            "y": -50
+          },
+          "nodeIndex": "vw_pbi_cert_roi",
+          "nodeLineageTag": "ca0f4028-4b56-412c-9aa5-3122bd7d5225",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 617.99997711181641,
+            "y": 276
+          },
+          "nodeIndex": "vw_pbi_kpis",
+          "nodeLineageTag": "a75f2cf7-93a9-484c-a6ce-7103df74d5b8",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 667,
+            "y": 20
+          },
+          "nodeIndex": "vw_pbi_roles",
+          "nodeLineageTag": "2421a662-cbaf-4a91-8f84-abb250e8bcba",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 359,
+            "y": 0
+          },
+          "nodeIndex": "vw_pbi_vacantes_cert",
+          "nodeLineageTag": "cead5666-a1c7-43d9-9b03-30a4b3c2fd1c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 901,
+            "y": 125
+          },
+          "nodeIndex": "vw_pbi_roi_escenario_v2",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1185,
+            "y": 139
+          },
+          "nodeIndex": "vw_pbi_salarios_v2",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 92.222222222222229,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

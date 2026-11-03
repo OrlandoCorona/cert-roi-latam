@@ -1,0 +1,149 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "costos_detalle",
+  "position": {
+    "x": 40,
+    "y": 745,
+    "width": 1840,
+    "height": 250,
+    "z": 1000,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_pbi_roi_escenario_v2"
+                    }
+                  },
+                  "Property": "codigo"
+                }
+              },
+              "queryRef": "vw_pbi_roi_escenario_v2.codigo",
+              "nativeQueryRef": "Certificación"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_pbi_roi_escenario_v2"
+                    }
+                  },
+                  "Property": "costo_examen_mxn_escenario"
+                }
+              },
+              "queryRef": "vw_pbi_roi_escenario_v2.costo_examen_mxn_escenario",
+              "nativeQueryRef": "Examen MXN"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_pbi_roi_escenario_v2"
+                    }
+                  },
+                  "Property": "horas_estudio"
+                }
+              },
+              "queryRef": "vw_pbi_roi_escenario_v2.horas_estudio",
+              "nativeQueryRef": "Horas de estudio"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_pbi_roi_escenario_v2"
+                    }
+                  },
+                  "Property": "inversion_total_mxn"
+                }
+              },
+              "queryRef": "vw_pbi_roi_escenario_v2.inversion_total_mxn",
+              "nativeQueryRef": "Inversión total MXN"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_pbi_roi_escenario_v2"
+                    }
+                  },
+                  "Property": "tc_usd_mxn"
+                }
+              },
+              "queryRef": "vw_pbi_roi_escenario_v2.tc_usd_mxn",
+              "nativeQueryRef": "Tipo de cambio supuesto"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "vw_pbi_roi_escenario_v2"
+                    }
+                  },
+                  "Property": "costo_hora_mxn"
+                }
+              },
+              "queryRef": "vw_pbi_roi_escenario_v2.costo_hora_mxn",
+              "nativeQueryRef": "Valor hora supuesto"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Detalle de costos del escenario'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "subTitle": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
