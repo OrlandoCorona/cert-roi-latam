@@ -8,13 +8,13 @@ El proyecto combina SQL Server (modelo relacional y vistas), Python (scrapers y 
 
 - **656 vacantes únicas** descargadas el 28 de octubre de 2026
 - **28 certificaciones** en el catálogo propio (AWS, Azure, GCP, PMI, Cisco, CompTIA, Scrum, ISC2 y otras)
-- **38 vacantes mencionan al menos una cert** (5.8% de la muestra)
+- **38 vacantes mencionan al menos una cert** (5.8% de la muestra de 656 vacantes de GetOnBoard)
 - **49 relaciones vacante–cert** (algunas vacantes mencionan varias certificaciones)
 - Las más mencionadas: **PMP (11)**, **CISSP (5)**, **GCP Professional Data Engineer (5)**, **CompTIA Security+ (4)**, **AZ-104 (3)**, **CCNA (3)**
 - 10 certificaciones del catálogo no aparecen en ninguna vacante de la muestra (varias de Coursera y Tableau)
 - 230 vacantes publican rango salarial en USD; en 426 el salario no está publicado o el periodo no es claro
 
-**El 5.8% describe esta muestra, no todo el mercado tech de LATAM.** GetOnBoard tiene mucho más peso en Chile (331 vacantes) y en roles 100% remoto (270) que en otros países. Los conteos sirven para ordenar prioridades, no para tomarlos como estadística poblacional.
+**El 5.8% de la muestra de 656 vacantes de GetOnBoard no representa todo el mercado tech de LATAM.** GetOnBoard tiene mucho más peso en Chile (331 vacantes) y en roles 100% remoto (270) que en otros países. Los conteos sirven para ordenar prioridades, no para tomarlos como estadística poblacional.
 
 ## El dashboard
 
