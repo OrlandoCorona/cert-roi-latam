@@ -1,0 +1,29 @@
+cert_id,codigo,nombre_oficial,proveedor,categoria,nivel,vacantes_con_cert,porcentaje_muestra
+21,PMP,Project Management Professional,PMI,Gestión,Professional,11,1.676829268292
+26,CISSP,Certified Information Systems Security Professional,ISC2,Ciber,Expert,5,0.762195121951
+8,GCP_PDE,Google Cloud Professional Data Engineer,Google,Cloud,Professional,5,0.762195121951
+18,COMPTIA_SEC,CompTIA Security+,CompTIA,Infraestructura,Entry,4,0.60975609756
+4,AZ_104,Microsoft Certified: Azure Administrator Associate (AZ-104),Microsoft,Cloud,Associate,3,0.45731707317
+19,CCNA,Cisco Certified Network Associate (200-301),Cisco,Infraestructura,Associate,3,0.45731707317
+0,AWS_CLF,AWS Certified Cloud Practitioner (CLF-C02),AWS,Cloud,Entry,2,0.30487804878
+1,AWS_SAA,AWS Certified Solutions Architect – Associate (SAA-C03),AWS,Cloud,Associate,2,0.30487804878
+3,AZ_900,Microsoft Certified: Azure Fundamentals (AZ-900),Microsoft,Cloud,Entry,2,0.30487804878
+25,CEH,Certified Ethical Hacker,EC-Council,Ciber,Professional,2,0.30487804878
+23,CSM,Certified ScrumMaster,Scrum Alliance,Gestión,Entry,2,0.30487804878
+7,GCP_PCA,Google Cloud Professional Cloud Architect,Google,Cloud,Professional,2,0.30487804878
+5,AZ_DP203,Microsoft Certified: Azure Data Engineer Associate (DP-203),Microsoft,Cloud,Associate,1,0.15243902439
+16,COMPTIA_APLUS,CompTIA A+ (Core 1 + Core 2),CompTIA,Infraestructura,Entry,1,0.15243902439
+17,COMPTIA_NET,CompTIA Network+,CompTIA,Infraestructura,Entry,1,0.15243902439
+6,GCP_ACE,Google Cloud Associate Cloud Engineer,Google,Cloud,Associate,1,0.15243902439
+20,LPIC1,LPIC-1 Linux Administrator,Linux Professional Institute,Infraestructura,Entry,1,0.15243902439
+27,OSCP,Offensive Security Certified Professional,Offensive Security,Ciber,Expert,1,0.15243902439
+2,AWS_DVA,AWS Certified Developer – Associate (DVA-C02),AWS,Cloud,Associate,0,0.0
+9,COURSERA_GDA,Google Data Analytics Professional Certificate,Google,Datos y BI,Entry,0,0.0
+24,COURSERA_GPM,Google Project Management Professional Certificate,Google,Gestión,Entry,0,0.0
+10,COURSERA_IBM_DA,IBM Data Analyst Professional Certificate,IBM,Datos y BI,Entry,0,0.0
+15,DB_LHF,Databricks Lakehouse Fundamentals,Databricks,Datos y BI,Entry,0,0.0
+14,DL_MLS,Machine Learning Specialization (DeepLearning.AI),DeepLearning.AI,Datos y BI,Intermediate,0,0.0
+11,MS_PL300,Microsoft Certified: Power BI Data Analyst Associate (PL-300),Microsoft,Datos y BI,Associate,0,0.0
+22,PSM1,Professional Scrum Master I (PSM I),Scrum.org,Gestión,Entry,0,0.0
+13,TAB_CDA,Tableau Certified Data Analyst,Tableau,Datos y BI,Associate,0,0.0
+12,TAB_SPEC,Tableau Desktop Specialist,Tableau,Datos y BI,Entry,0,0.0

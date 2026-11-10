@@ -1,0 +1,50 @@
+vacante_id,cert_id,codigo,estado,menciones,titulo,fecha_publicacion,url_vacante,empresa
+139,0,AWS_CLF,deseable,1,Technical Account Manager (Tam),2026-07-24,https://www.getonbrd.com/jobs/technical-account-manager-tam-factor-it-medellin,Factor IT
+443,0,AWS_CLF,deseable,1,Administrador/a de Infraestructura Linux,2026-10-06,https://www.getonbrd.com/jobs/administrador-a-de-infraestructura-linux-bc-tecnologia-santiago,BC TecnologÃ­a
+464,1,AWS_SAA,alternativa,1,Cloud Architect,2026-09-30,https://www.getonbrd.com/jobs/cloud-platform-engineering-lead-dynamic-devs-santiago-f1e1,Dynamic Devs
+526,1,AWS_SAA,alternativa,1,Platform Engineer,2026-09-30,https://www.getonbrd.com/jobs/platform-engineer-dynamic-devs-santiago,Dynamic Devs
+352,4,AZ_104,deseable,2,Administrador de TI y Ciberseguridad,2026-07-24,https://www.getonbrd.com/jobs/administrador-de-ti-y-ciberseguridad-quinenco-santiago,QuiÃ±enco
+387,4,AZ_104,deseable,2,DevOps Azure,2026-08-05,https://www.getonbrd.com/jobs/ingeniero-de-infraestructura-cloud-azure-bc-tecnologia-santiago,BC TecnologÃ­a
+443,4,AZ_104,deseable,1,Administrador/a de Infraestructura Linux,2026-10-06,https://www.getonbrd.com/jobs/administrador-a-de-infraestructura-linux-bc-tecnologia-santiago,BC TecnologÃ­a
+139,3,AZ_900,deseable,2,Technical Account Manager (Tam),2026-07-24,https://www.getonbrd.com/jobs/technical-account-manager-tam-factor-it-medellin,Factor IT
+443,3,AZ_900,deseable,1,Administrador/a de Infraestructura Linux,2026-10-06,https://www.getonbrd.com/jobs/administrador-a-de-infraestructura-linux-bc-tecnologia-santiago,BC TecnologÃ­a
+148,5,AZ_DP203,deseable,2,Arquitecto de Datos (Data & AI),2026-10-19,https://www.getonbrd.com/jobs/arquitecto-de-datos-sr-data-ai-grupo-mariposa-remote-48e8,Grupo Mariposa
+352,19,CCNA,deseable,2,Administrador de TI y Ciberseguridad,2026-07-24,https://www.getonbrd.com/jobs/administrador-de-ti-y-ciberseguridad-quinenco-santiago,QuiÃ±enco
+415,19,CCNA,deseable,2,Soporte de Redes y Telecomunicaciones Tarapaca,2026-09-28,https://www.getonbrd.com/jobs/soporte-de-redes-y-telecomunicaciones-tarapaca-bc-tecnologia-iquique,BC TecnologÃ­a
+612,19,CCNA,deseable,1,Consultor de Operaciones,2026-05-27,https://www.getonbrd.com/jobs/consultor-de-operaciones-sonda-santiago,SONDA
+608,25,CEH,deseable,1,Arquitecto de Ciberseguridad,2026-10-02,https://www.getonbrd.com/jobs/arquitecto-de-ciberseguridad-bice-vida-santiago-d1f9,BICE VIDA
+617,25,CEH,alternativa,1,Especialista de Seguridad Informática,2026-09-28,https://www.getonbrd.com/jobs/especialista-de-seguridad-informatica-grupo-mariposa-remote,Grupo Mariposa
+127,26,CISSP,sin_especificar,1,SaaS Security Engineer,2026-10-23,https://www.getonbrd.com/jobs/is-it-security-engineer-economic-impact-catalyst-remote,Economic Impact Catalyst
+606,26,CISSP,deseable,1,Analista de Seguridad de la Información Junior,2025-12-22,https://www.getonbrd.com/jobs/analista-de-seguridad-de-la-informacion-junior-bc-tecnologia-santiago,BC TecnologÃ­a
+611,26,CISSP,deseable,1,Cloud Security Operations Analyst,2026-10-22,https://www.getonbrd.com/jobs/cloud-security-operations-analyst-interfell-remote,Interfell
+617,26,CISSP,alternativa,1,Especialista de Seguridad Informática,2026-09-28,https://www.getonbrd.com/jobs/especialista-de-seguridad-informatica-grupo-mariposa-remote,Grupo Mariposa
+620,26,CISSP,deseable,1,Ingeniero de Seguridad en Proyectos,2026-02-25,https://www.getonbrd.com/jobs/ingeniero-de-seguridad-en-proyectos-bc-tecnologia-santiago,BC TecnologÃ­a
+393,16,COMPTIA_APLUS,deseable,1,Junior IT Support Technician,2026-08-22,https://www.getonbrd.com/jobs/junior-it-support-technician-bitmax-technologies-llc-remote,"Bitmax Technologies, LLC"
+393,17,COMPTIA_NET,deseable,1,Junior IT Support Technician,2026-08-22,https://www.getonbrd.com/jobs/junior-it-support-technician-bitmax-technologies-llc-remote,"Bitmax Technologies, LLC"
+352,18,COMPTIA_SEC,deseable,2,Administrador de TI y Ciberseguridad,2026-07-24,https://www.getonbrd.com/jobs/administrador-de-ti-y-ciberseguridad-quinenco-santiago,QuiÃ±enco
+611,18,COMPTIA_SEC,deseable,1,Cloud Security Operations Analyst,2026-10-22,https://www.getonbrd.com/jobs/cloud-security-operations-analyst-interfell-remote,Interfell
+617,18,COMPTIA_SEC,alternativa,1,Especialista de Seguridad Informática,2026-09-28,https://www.getonbrd.com/jobs/especialista-de-seguridad-informatica-grupo-mariposa-remote,Grupo Mariposa
+619,18,COMPTIA_SEC,deseable,1,Ingeniero de Ciberseguridad,2026-02-17,https://www.getonbrd.com/jobs/ingeniero-de-ciberseguridad-bc-tecnologia-santiago,BC TecnologÃ­a
+250,23,CSM,deseable,1,Scrum Master / Product Owner,2026-10-05,https://www.getonbrd.com/jobs/scrum-master-product-owner-bc-tecnologia-lima,BC TecnologÃ­a
+520,23,CSM,deseable,1,Líder Técnico Full-Stack (Python + Angular + Azure),2026-10-05,https://www.getonbrd.com/jobs/lider-tecnico-full-stack-python-angular-azure-grupo-sud-santiago,GRUPO SUD
+144,6,GCP_ACE,deseable,1,Data Engineer Semi Senior,2026-10-16,https://www.getonbrd.com/jobs/data-engineer-semi-senior-factor-it-santiago,Factor IT
+454,7,GCP_PCA,deseable,1,Arquitecto/a de Soluciones TI Senior,2026-10-14,https://www.getonbrd.com/jobs/arquitecto-a-de-soluciones-ti-senior-bc-tecnologia-santiago,BC TecnologÃ­a
+504,7,GCP_PCA,deseable,1,Ingeniero/a Cloud,2026-08-07,https://www.getonbrd.com/jobs/ingeniero-a-cloud-riskamerica-remote,RiskAmerica
+69,8,GCP_PDE,deseable,1,Ingeniero/a de Datos GCP Senior,2026-05-28,https://www.getonbrd.com/jobs/ingeniero-a-de-datos-gcp-senior-bc-tecnologia-santiago,BC TecnologÃ­a
+123,8,GCP_PDE,deseable,1,Data Engineer Senior,2026-10-07,https://www.getonbrd.com/jobs/data-engineer-senior-dsac-chile-remote,DSAC Chile
+124,8,GCP_PDE,deseable,1,Data Engineer (GCP/Bigquery),2026-10-24,https://www.getonbrd.com/jobs/data-engineer-gcp-bigquery-dsac-chile-remote,DSAC Chile
+125,8,GCP_PDE,deseable,1,Data Governance GCP,2026-10-24,https://www.getonbrd.com/jobs/data-governance-gcp-dsac-chile-remote,DSAC Chile
+144,8,GCP_PDE,deseable,1,Data Engineer Semi Senior,2026-10-16,https://www.getonbrd.com/jobs/data-engineer-semi-senior-factor-it-santiago,Factor IT
+443,20,LPIC1,deseable,1,Administrador/a de Infraestructura Linux,2026-10-06,https://www.getonbrd.com/jobs/administrador-a-de-infraestructura-linux-bc-tecnologia-santiago,BC TecnologÃ­a
+618,27,OSCP,deseable,1,Ethical Hacker / Pentester,2026-03-18,https://www.getonbrd.com/jobs/ethical-hacker-pentester-bc-tecnologia-santiago,BC TecnologÃ­a
+13,21,PMP,deseable,1,Data Manager,2026-02-04,https://www.getonbrd.com/jobs/data-manager-artefact-latam-ciudad-de-mexico-santiago,Artefact LatAm
+253,21,PMP,deseable,2,Senior Technical Project Manager,2026-08-25,https://www.getonbrd.com/jobs/senior-technical-project-manager-integratz-vina-del-mar,INTEGRATZ
+335,21,PMP,deseable,1,Senior JIRA/atlassian Engineer,2026-08-31,https://www.getonbrd.com/jobs/senior-jira-atlassian-engineer-niuro-remote-510f,Niuro
+404,21,PMP,deseable,1,Program Manager Senior,2026-01-30,https://www.getonbrd.com/jobs/program-manager-senior-bc-tecnologia-santiago,BC TecnologÃ­a
+515,21,PMP,deseable,1,Jefe de Proyecto Cloud & FinOps,2026-10-14,https://www.getonbrd.com/jobs/jefe-de-proyectos-dynamic-devs-santiago-bc22,Dynamic Devs
+516,21,PMP,deseable,1,Jefe de Proyectos Semi Senior,2026-10-15,https://www.getonbrd.com/jobs/jefe-de-proyectos-semi-senior-tcit-santiago,TCIT
+527,21,PMP,sin_especificar,1,PMO Senior,2026-06-30,https://www.getonbrd.com/jobs/pmo-senior-bc-tecnologia-santiago,BC TecnologÃ­a
+529,21,PMP,deseable,1,Senior Cloud Project Manager,2026-10-13,https://www.getonbrd.com/jobs/project-manager-cloud-senior-bc-tecnologia-santiago,BC TecnologÃ­a
+637,21,PMP,deseable,1,Jefe de Proyectos de Telecomunicaciones,2026-01-12,https://www.getonbrd.com/jobs/jefe-de-proyectos-de-telecomunicaciones-bc-tecnologia-santiago,BC TecnologÃ­a
+644,21,PMP,alternativa,1,PM Bogotá Inglés B2,2026-09-30,https://www.getonbrd.com/jobs/pm-bogota-factor-it-bogota,Factor IT
+647,21,PMP,deseable,1,Project Manager Operations,2026-05-11,https://www.getonbrd.com/jobs/project-manager-operations-signant-health-remote,Signant Health

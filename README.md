@@ -48,10 +48,12 @@ Parámetros editables en SQL (tabla `roi_parametros_v2`): tipo de cambio 20 MXN/
 cert-roi-latam/
 ├── sql/                    # 18 scripts SQL numerados
 ├── scrapers/               # Scraper de GetOnBoard, detector v2 y utilidades Python
+├── scripts/                # Exportación de las vistas v2 a CSV
+├── app/                    # App Streamlit que lee los CSV de data/processed/
 ├── tests/                  # Pruebas unitarias del detector (7 casos)
 ├── powerbi/                # modelo_v2.bim (metadatos del modelo) y guías
 ├── docs/                   # Documentación de avance, decisiones y correcciones
-├── data/                   # Carpetas raw/ y processed/ (JSONs locales)
+├── data/                   # raw/ (JSONs locales, sin versionar) y processed/ (CSV de las vistas)
 ├── notebooks/              # Reservado para análisis exploratorio
 └── requirements.txt        # Dependencias Python
 ```
@@ -68,7 +70,7 @@ cert-roi-latam/
    - `02` a `04`: catálogo de certificaciones y datos semilla
    - `05`: procedimiento para cargar JSON de GetOnBoard
    - `06`: detector v1 (base original, se conserva para comparación)
-   - `08`: cargar las 656 vacantes
+   - `08`: cargar las 656 vacantes (ajustar `@ruta_base` a la carpeta local de `data/raw/getonboard`)
    - `10`: validación de datos (solo lectura)
    - `11` a `18`: capa v2 (detector corregido, salarios de origen, escenario ROI, validaciones)
    - **No ejecutar `SQLQuery1.sql`** — es destructivo y queda como referencia

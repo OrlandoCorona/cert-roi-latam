@@ -7,7 +7,7 @@ Este documento reemplaza el diagnostico preliminar que quedo desactualizado. No 
 - Servidor ORLANDOCORONA, instancia predeterminada MSSQLSERVER, base cert_roi_latam; perfil de VS Code cert_roi_latam_local.
 - Carga existente mediante SQL OPENROWSET + OPENJSON; Python apoya la extraccion y ahora la depuracion. No atribuir toda la carga a Python.
 - Repositorio https://github.com/OrlandoCorona/cert-roi-latam.
-- Power BI existente: C:\Users\menes\OneDrive\Documentos\ROI.pbix. El archivo guardado inspeccionado tiene cuatro tarjetas en Pagina 1, con referencias a medidas de vw_pbi_cert_roi. Su diagrama contiene las cuatro vistas originales. Fecha de modificacion mostrada por el equipo: 29/10/2026 23:38:21. No representa necesariamente cambios abiertos sin guardar u otra copia.
+- Power BI existente: %USERPROFILE%\OneDrive\Documentos\ROI.pbix. El archivo guardado inspeccionado tiene cuatro tarjetas en Pagina 1, con referencias a medidas de vw_pbi_cert_roi. Su diagrama contiene las cuatro vistas originales. Fecha de modificacion mostrada por el equipo: 29/10/2026 23:38:21. No representa necesariamente cambios abiertos sin guardar u otra copia.
 - El historial exportado documenta siete medidas DAX y la relacion codigo -> cert_codigo. Las cuatro medidas usadas por tarjetas se confirmaron en las definiciones del PBIX; las formulas de las siete proceden del historial, no de una extraccion actual del modelo comprimido.
 
 ## Correcciones aplicadas y verificadas en la sesion anterior

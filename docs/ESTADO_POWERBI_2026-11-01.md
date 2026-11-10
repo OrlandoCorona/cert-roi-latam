@@ -18,13 +18,13 @@ La comprobacion del filtro se repitio con un lector de filas porque DataTable.Lo
 
 ## Respaldos
 
-- Copia original sin modificar: C:\Users\menes\AppData\Local\Temp\ROI_antes_refresco_20261101.pbix (107476 bytes).
-- Metadatos del modelo anterior: C:\Users\menes\AppData\Local\Temp\ROI_modelo_antes_20261101.json.
+- Copia original sin modificar: %USERPROFILE%\AppData\Local\Temp\ROI_antes_refresco_20261101.pbix (107476 bytes).
+- Metadatos del modelo anterior: %USERPROFILE%\AppData\Local\Temp\ROI_modelo_antes_20261101.json.
 - Metadatos completos del modelo corregido: powerbi/modelo_v2.bim. No incluye las paginas/visuales ni sustituye el guardado del PBIX.
 
 ## Bloqueo pendiente: no afirmar que el PBIX esta guardado
 
-El archivo C:\Users\menes\OneDrive\Documentos\ROI.pbix sigue con fecha 29/10/2026 y 107476 bytes. La interfaz conserva un cuadro Cargar/Evaluando superpuesto a Consulta de base de datos nativa y muestra cambios de consultas pendientes. La consulta nativa pendiente es SELECT * FROM dbo.vw_pbi_cert_roi, introducida durante el diagnostico; no es necesaria para la version corregida de las fuentes del modelo. Las solicitudes automatizadas de cancelar/cerrar ese dialogo y guardar no han cambiado su estado visible. No terminar ni reiniciar Power BI mientras el modelo corregido solo este en memoria. No afirmar que las tarjetas visibles ya cambiaron: siguen mostrando 44 y 6.7% en la ultima captura.
+El archivo %USERPROFILE%\OneDrive\Documentos\ROI.pbix sigue con fecha 29/10/2026 y 107476 bytes. La interfaz conserva un cuadro Cargar/Evaluando superpuesto a Consulta de base de datos nativa y muestra cambios de consultas pendientes. La consulta nativa pendiente es SELECT * FROM dbo.vw_pbi_cert_roi, introducida durante el diagnostico; no es necesaria para la version corregida de las fuentes del modelo. Las solicitudes automatizadas de cancelar/cerrar ese dialogo y guardar no han cambiado su estado visible. No terminar ni reiniciar Power BI mientras el modelo corregido solo este en memoria. No afirmar que las tarjetas visibles ya cambiaron: siguen mostrando 44 y 6.7% en la ultima captura.
 
 Siguiente accion: resolver ese cuadro de interfaz, conservar el modelo corregido respaldado, verificar que Power Query no sobrescriba los cambios externos, guardar mediante Power BI y confirmar cambio de fecha y tarjetas 656/38/5.8%/28. Luego completar visuales de demanda/escenario y publicacion. El informe todavia tiene una pagina con cuatro tarjetas: no es un dashboard finalizado.
 
