@@ -10,7 +10,6 @@ DATA_DIR = Path(__file__).resolve().parent.parent / "data" / "processed"
 
 st.set_page_config(
     page_title="Tracker Certificaciones LATAM",
-    page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
 )
