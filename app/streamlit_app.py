@@ -73,7 +73,7 @@ if pagina == "Resumen":
         labels={"vacantes_con_cert": "Vacantes que la mencionan", "nombre_oficial": ""},
     )
     fig.update_layout(yaxis={"categoryorder": "total ascending"}, height=500)
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
     st.info(
         "El 5.8% describe esta muestra, no el mercado tech completo de LATAM. "
@@ -120,7 +120,7 @@ elif pagina == "Demanda por certificación":
                 "porcentaje_muestra": "% de la muestra",
             }
         ),
-        use_container_width=True,
+        width="stretch",
         height=500,
     )
 
@@ -159,7 +159,7 @@ elif pagina == "Vacantes con mención":
                 "url_vacante": "URL",
             }
         ),
-        use_container_width=True,
+        width="stretch",
         height=600,
     )
 
@@ -193,6 +193,6 @@ else:
                 "url_oficial": "Sitio oficial",
             }
         ),
-        use_container_width=True,
+        width="stretch",
         height=600,
     )
